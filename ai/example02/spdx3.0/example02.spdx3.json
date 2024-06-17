@@ -1,128 +1,153 @@
 {
-    "@context": "https://spdx.org/rdf/3.0.0/spdx-context.jsonld",
-    "@graph": [
-      {
-        "type": "CreationInfo",
-        "@id": "_:creationinfo",
-        "specVersion": "3.0.0",
-        "createdBy": [
-          "https://spdx.org/spdxdocs/Person/ArthitSuriyawongkul-1000e6a2-0229-4875-baa7-c99be213b6e1"
-        ],
-        "created": "2024-05-31T00:00:00Z"
-      },
-      {
-        "type": "Person",
-        "spdxId": "https://spdx.org/spdxdocs/Person/ArthitSuriyawongkul-1000e6a2-0229-4875-baa7-c99be213b6e1",
-        "creationInfo": "_:creationinfo",
-        "name": "Arthit Suriyawongkul",
-        "externalIdentifier": [
-          {
-            "type": "ExternalIdentifier",
-            "externalIdentifierType": "email",
-            "identifier": "arthit@example.com"
-          }
-        ]
-      },
-      {
-        "type": "SpdxDocument",
-        "spdxId": "https://spdx.org/spdxdocs/Document1-",
-        "creationInfo": "_:creationinfo",
-        "profileConformance": [
-          "core",
-          "ai"
-        ],
-        "rootElement": [
-          "https://spdx.org/spdxdocs/BOM-"
-        ]
-      },
-      {
-        "type": "Bom",
-        "spdxId": "https://spdx.org/spdxdocs/BOM-",
-        "creationInfo": "_:creationinfo",
-        "profileConformance": [
-          "core",
-          "ai"
-        ],
-        "rootElement": [
-          "https://spdx.org/spdxdocs/AIPackage-"
-        ]
-      },
-      {
-        "type": "ai_AIPackage",
-        "spdxId": "https://spdx.org/spdxdocs/AIPackage-",
-        "creationInfo": "_:creationinfo",
-        "name": "",
-        "ai_informationAboutApplication": "'intended_task': '...', 'integrated_desc': '...' 'software_version': '...', 'architecture': '', 'number_of_parameters': 5,         'input_modality': '', 'input_format': '', 'output_modality': '', 'output_format': ''",
-        "ai_informationAboutTraining": "",
-        "ai_modelDataPreprocessing": "",
-        "ai_safetyRiskAssessment": "",
-        "ai_useSensitivePersonalInformation": "no",
-        "software_downloadLocation": "",
-        "software_primaryPurpose": "model",
-        "software_packageVersion": "",
-        "releaseTime": "Release date",
-        "suppliedBy": "",
-        "domain": "'intended_task': ''",
-        "comment": "'acceptable_use_policy': '', 'distribution_method': ''"
-      },
-      {
-        "type": "dataset_DatasetPackage",
-        "spdxId": "https://spdx.org/spdxdocs/DatasetPackage-",
-        "creationInfo": "_:creationinfo",
-        "name": "",
-        "originatedBy": [
-          "https://spdx.org/spdxdocs/Organization-"
-        ],
-        "builtTime": "2023-12-16T11:22:38Z",
-        "releaseTime": "2024-04-15T08:10:00Z",
-        "software_downloadLocation": "",
-        "software_primaryPurpose": "data",
-        "dataset_confidentialityLevel": "clear",
-        "dataset_datasetAvailability": "directDownload",
-        "dataset_datasetSize": 2689,
-        "dataset_datasetType": [
-          "structured",
-          "timestamp"
-        ],
-        "dataset_datasetUpdateMechanism": "",
-        "dataset_hasSensitivePersonalInformation": "no",
-        "dataset_intendedUse": "",
-        "dataset_knownBias": ""
-      },
-      {
-        "type": "Relationship",
-        "spdxId": "https://spdx.org/spdxdocs/Relationship/contains-",
-        "creationInfo": "_:creationinfo",
-        "relationshipType": "contains",
-        "from": "https://spdx.org/spdxdocs/DatasetPackage-",
-        "to": [
-          "https://spdx.org/spdxdocs/File1-",
-          "https://spdx.org/spdxdocs/File2-"
-        ]
-      },
-      {
-        "type": "Relationship",
-        "spdxId": "https://spdx.org/spdxdocs/Relationship/availableFrom-",
-        "creationInfo": "_:creationinfo",
-        "relationshipType": "availableFrom",
-        "from": "https://spdx.org/spdxdocs/DatasetPackage-",
-        "to": "https://spdx.org/spdxdocs/Organization-"
-      },
-      {
-        "type": "Relationship",
-        "spdxId": "https://spdx.org/spdxdocs/Relationship/concludedLicense-",
-        "creationInfo": "_:creationinfo",
-        "relationshipType": "hasConcludedLicense",
-        "from": "https://spdx.org/spdxdocs/DatasetPackage-",
-        "to": "CC-BY-4.0"
-      },
-      {
-        "type": "Relationship",
-        "spdxId": "https://spdx.org/spdxdocs/Relationship/declaredLicense-",
-        "creationInfo": "_:creationinfo",
-        "relationshipType": "hasDeclaredLicense",
-        "from": "https://spdx.org/spdxdocs/DatasetPackage-",
-        "to": "CC-BY-4.0"
-      }
-    ]
-  }
+  "@context": "https://spdx.org/rdf/3.0.0/spdx-context.jsonld",
+  "@graph": [
+    {
+      "@id": "_:creationinfo",
+      "created": "2024-06-14T00:00:00Z",
+      "createdBy": [
+        "https://spdx.org/spdxdocs/Person1-1000e6a2-0229-4875-baa7-c99be213b6e1"
+      ],
+      "specVersion": "3.0.0",
+      "type": "CreationInfo"
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "externalIdentifier": [
+        {
+          "externalIdentifierType": "email",
+          "identifier": "arthit@example.com",
+          "type": "ExternalIdentifier"
+        }
+      ],
+      "name": "Arthit Suriyawongkul",
+      "spdxId": "https://spdx.org/spdxdocs/Person1-1000e6a2-0229-4875-baa7-c99be213b6e1",
+      "type": "Person"
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "name": "Organization1",
+      "spdxId": "https://spdx.org/spdxdocs/Organization1-",
+      "type": "Organization"
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "profileConformance": [
+        "ai",
+        "core"
+      ],
+      "rootElement": [
+        "https://spdx.org/spdxdocs/BOM-"
+      ],
+      "spdxId": "https://spdx.org/spdxdocs/Document1-",
+      "type": "SpdxDocument"
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "profileConformance": [
+        "ai",
+        "core"
+      ],
+      "rootElement": [
+        "https://spdx.org/spdxdocs/AIPackage-"
+      ],
+      "spdxId": "https://spdx.org/spdxdocs/BOM-",
+      "type": "Bom"
+    },
+    {
+      "ai_domain": [
+        "'intended_task': ''"
+      ],
+      "ai_informationAboutApplication": "'intended_task': '...', 'integrated_desc': '...' 'software_version': '...', 'architecture': '', 'number_of_parameters': 5,         'input_modality': '', 'input_format': '', 'output_modality': '', 'output_format': ''",
+      "ai_informationAboutTraining": "",
+      "ai_modelDataPreprocessing": [
+        ""
+      ],
+      "ai_safetyRiskAssessment": "high",
+      "ai_useSensitivePersonalInformation": "no",
+      "comment": "'acceptable_use_policy': '', 'distribution_method': ''",
+      "creationInfo": "_:creationinfo",
+      "name": "",
+      "releaseTime": "2023-04-20T11:22:38Z",
+      "software_downloadLocation": "",
+      "software_packageVersion": "",
+      "software_primaryPurpose": "model",
+      "spdxId": "https://spdx.org/spdxdocs/AIPackage-",
+      "suppliedBy": "https://spdx.org/spdxdocs/Organization-",
+      "type": "ai_AIPackage"
+    },
+    {
+      "builtTime": "2023-12-16T11:22:38Z",
+      "creationInfo": "_:creationinfo",
+      "dataset_confidentialityLevel": "clear",
+      "dataset_datasetAvailability": "directDownload",
+      "dataset_datasetSize": 2689,
+      "dataset_datasetType": [
+        "structured",
+        "timestamp"
+      ],
+      "dataset_datasetUpdateMechanism": "",
+      "dataset_hasSensitivePersonalInformation": "no",
+      "dataset_intendedUse": "",
+      "dataset_knownBias": [
+        ""
+      ],
+      "name": "",
+      "originatedBy": [
+        "https://spdx.org/spdxdocs/Organization1-"
+      ],
+      "releaseTime": "2024-04-15T08:10:00Z",
+      "software_downloadLocation": "",
+      "software_primaryPurpose": "data",
+      "spdxId": "https://spdx.org/spdxdocs/DatasetPackage1-",
+      "type": "dataset_DatasetPackage"
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "from": "https://spdx.org/spdxdocs/DatasetPackage1-",
+      "relationshipType": "contains",
+      "spdxId": "https://spdx.org/spdxdocs/Relationship/contains-",
+      "to": [
+        "https://spdx.org/spdxdocs/File1-",
+        "https://spdx.org/spdxdocs/File2-"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "from": "https://spdx.org/spdxdocs/DatasetPackage1-",
+      "relationshipType": "availableFrom",
+      "spdxId": "https://spdx.org/spdxdocs/Relationship/availableFrom-",
+      "to": [
+        "https://spdx.org/spdxdocs/Organization-"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "from": "https://spdx.org/spdxdocs/DatasetPackage-",
+      "relationshipType": "hasConcludedLicense",
+      "spdxId": "https://spdx.org/spdxdocs/Relationship/concludedLicense-",
+      "to": [
+        "https://spdx.org/licenses/CC-BY-4.0"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "from": "https://spdx.org/spdxdocs/DatasetPackage1-",
+      "relationshipType": "hasDeclaredLicense",
+      "spdxId": "https://spdx.org/spdxdocs/Relationship/declaredLicense-",
+      "to": [
+        "https://spdx.org/licenses/CC-BY-4.0"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "simplelicensing_licenseExpression": "CC-BY-4.0",
+      "simplelicensing_licenseListVersion": "3.24.0",
+      "spdxId": "https://spdx.org/licenses/CC-BY-4.0",
+      "type": "simplelicensing_LicenseExpression"
+    }
+  ]
+}
