@@ -50,28 +50,38 @@ jobs:
         run: |
           sudo apt update -y
 
-      - name: Setup Java tools
+      - name: Check if there are SPDX 2.2 or 2.3 or 3.0 files
+        run: |
+          find . \( -path '*/spdx2.2/*' -o -path '*/spdx2.3/*' \) \( -name *.spdx -o -name *.json \) > v2list.txt
+          if [ -s v2list.txt ]; then echo "HAS_V2=true" >> $GITHUB_ENV; else echo "HAS_V2=false" >> $GITHUB_ENV; fi
+          find . -type f -path '*/spdx3.0/*.json' > v3list.txt
+          if [ -s v3list.txt ]; then echo "HAS_V3=true" >> $GITHUB_ENV; else echo "HAS_V3=false" >> $GITHUB_ENV; fi
+
+      - name: Setup Java tools for SPDX 2.2 & SPDX 2.3
+        if: env.HAS_V2 == 'true'
         run: |
           sudo apt install -y default-jdk maven
           git clone https://github.com/spdx/tools-java.git && cd tools-java
           export JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")
           mvn clean install && cd ..
 
-      - name: Setup Python tools
+      - name: Setup Python tools for SPDX 3.0
+        if: env.HAS_V3 == 'true'
         run: |
           python3 -m pip install -U pip
           python3 -m pip install spdx3-validate
 
       - name: Validate SPDX 2.2 & SPDX 2.3 Documents
+        if: env.HAS_V2 == 'true'
         run: |
           find . \( -path '*/spdx2.2/*' -o -path '*/spdx2.3/*' \) \( -name *.spdx -o -name *.json \) \
             -exec echo {} \; \
             -exec java -jar tools-java/target/tools-java-*-jar-with-dependencies.jar Verify {} \;
 
       - name: Validate SPDX 3.0 Documents
+        if: env.HAS_V3 == 'true'
         run: |
-          for f in $(find . -type f -path '*/spdx3.0/*.json'); do
+          for f in $(cat v3list.txt); do
               echo "Checking $f..."
               spdx3-validate -j $f
           done
-
