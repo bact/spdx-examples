@@ -12,11 +12,9 @@ for a Dataset Profile.
 
 Directories of the form `example##` are structured as follows:
 
-- `content/`: contains the example's content (data files, related source code,
-  etc.)
-- `spdx3.0/`: contains one or more SPDX 3.0.1 documents for the example
-- `spdx3.1/`: contains SPDX 3.1 counterpart documents (for examples that use
-  properties deprecated in SPDX 3.1)
+- `content/`: contains the example's content (data files, source code, etc.)
+- `spdx3.0/`: contains SPDX 3.0 documents for the example
+- `spdx3.1/`: contains SPDX 3.1 documents for the example
 - `README.md`: more details about the particular example
 
 ## Examples
