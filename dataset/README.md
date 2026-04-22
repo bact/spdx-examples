@@ -3,7 +3,7 @@ SPDX-FileType: DOCUMENTATION
 SPDX-License-Identifier: CC-BY-4.0
 ---
 
-# SPDX Dataset Profile Examples
+# SPDX dataset profile examples
 
 This repository includes demonstrations of [SPDX documents](https://spdx.dev)
 for a Dataset Profile.

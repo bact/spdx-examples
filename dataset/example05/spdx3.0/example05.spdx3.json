@@ -59,7 +59,7 @@
             "dataset_datasetType": [
                 "text"
             ],
-            "dataset_datasetSize": 180000,
+            "dataset_datasetSize": 2684354560,
             "dataset_datasetAvailability": "query",
             "dataset_confidentialityLevel": "amber",
             "dataset_dataCollectionProcess": "Clinical notes extracted from the hospital EHR system under IRB protocol #2022-0841. Only notes from adult patients (18+) with written informed consent or covered by institutional waiver for de-identified data. Extracted notes span encounters from January 2015 to December 2022. NER annotations created by 6 clinical informatics specialists using BRAT annotation tool.",

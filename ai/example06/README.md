@@ -3,7 +3,7 @@ SPDX-FileType: DOCUMENTATION
 SPDX-License-Identifier: CC-BY-4.0
 ---
 
-# AI Profile Example 06 — Energy Consumption Reporting
+# AI profile example 06 — Energy consumption reporting
 
 ## Description
 
@@ -29,34 +29,34 @@ Each stage uses an `ai_EnergyConsumptionDescription` object with
 
 The example also uses `ai_autonomyType` (SPDX 3.0) to record autonomy level.
 
-## SPDX 3.0 vs 3.1 Note
+## SPDX 3.0 vs 3.1 note
 
 | Property | SPDX 3.0 | SPDX 3.1 |
 | ---------- | ---------- | ---------- |
-| `ai_autonomyType` | `"noAssertion"` (PresenceType) | **deprecated** → use `isoAutomationLevel` |
+| `ai_autonomyType` | `"noAssertion"` (PresenceType) | **deprecated** → use `isoAutomationLevel`; here: `noAssertion` |
 
 In SPDX 3.1, the Core-level `intendedUse` property also allows describing
 deployment purpose at the artifact level. See
 [spdx3.1/example06.spdx3.json](./spdx3.1/example06.spdx3.json).
 
-## Profile Conformance
+## Profile conformance
 
 `core`, `ai`
 
-## SPDX Files
+## SPDX files
 
 | Version | File |
 | --------- | ------ |
-| SPDX 3.0.1 | [spdx3.0/example06.spdx3.json](./spdx3.0/example06.spdx3.json) |
+| SPDX 3.0 | [spdx3.0/example06.spdx3.json](./spdx3.0/example06.spdx3.json) |
 | SPDX 3.1 (draft) | [spdx3.1/example06.spdx3.json](./spdx3.1/example06.spdx3.json) |
 
-## Key Properties Demonstrated
+## Key properties demonstrated
 
 | Property | Value / Notes |
 | ---------- | --------------- |
+| `ai_autonomyType` | `noAssertion` (SPDX 3.0, deprecated in 3.1) |
 | `ai_energyConsumption` | All 3 stages (training, finetuning, inference) |
-| `ai_trainingEnergyConsumption` | 4,823.5 kWh |
 | `ai_finetuningEnergyConsumption` | 187.2 kWh |
 | `ai_inferenceEnergyConsumption` | 0.0041 kWh per batch |
 | `ai_standardCompliance` | ISO/IEC 42001:2023 |
-| `ai_autonomyType` | `noAssertion` (SPDX 3.0, deprecated in 3.1) |
+| `ai_trainingEnergyConsumption` | 4,823.5 kWh |

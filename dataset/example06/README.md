@@ -3,7 +3,7 @@ SPDX-FileType: DOCUMENTATION
 SPDX-License-Identifier: CC-BY-4.0
 ---
 
-# Dataset Profile Example 06 — Synthetic Dataset
+# Dataset profile example 06 — Synthetic dataset
 
 ## Description
 
@@ -16,52 +16,52 @@ transaction data cannot be shared for privacy reasons.
 The SBOM ([spdx3.0/example06.spdx3.json](./spdx3.0/example06.spdx3.json))
 demonstrates Dataset-profile properties for **synthetically generated datasets**:
 
+- `dataset_confidentialityLevel: clear` — freely distributable (CC0-1.0)
+- `dataset_dataCollectionProcess` — documents the generation methodology (GAN
+  architecture, privacy audit, reference dataset) rather than data collection
+- `dataset_datasetNoise` — describes the distributional limitations introduced
+  by synthetic generation (GAN may not capture rare fraud patterns)
+- `dataset_datasetSize` — size in bytes; **deprecated in SPDX 3.1**,
+  replaced by `software_artifactSize` (same unit: bytes)
 - `dataset_datasetType: ["structured"]` — tabular format (rows and columns);
   note: `syntactic` in SPDX means data about grammatical/syntactic structure
   (e.g. parse trees, dependency graphs) and is **not** the same as synthetic
   data — do not use `syntactic` for GAN-generated or procedurally generated datasets
-- `dataset_datasetNoise` — describes the distributional limitations introduced
-  by synthetic generation (GAN may not capture rare fraud patterns)
-- `dataset_dataCollectionProcess` — documents the generation methodology (GAN
-  architecture, privacy audit, reference dataset) rather than data collection
 - `dataset_hasSensitivePersonalInformation: no` — synthetic data contains no
   real customer records (confirmed by privacy audit)
-- `dataset_confidentialityLevel: clear` — freely distributable (CC0-1.0)
-- `dataset_datasetSize` — item count (1,000,000 records);
-  **deprecated in SPDX 3.1**, replaced by `software_artifactSize`
 - `dataset_intendedUse` — fraud detection research only, not production
   deployment; **deprecated in SPDX 3.1**, moved to Core-level `intendedUse`
 
-## SPDX 3.0 vs 3.1 Note
+## SPDX 3.0 vs 3.1 note
 
 | Property | SPDX 3.0 | SPDX 3.1 |
 | ---------- | ---------- | ---------- |
-| `dataset_datasetSize` | `1000000` (record count) | **deprecated** → use `software_artifactSize` (bytes) |
+| `dataset_datasetSize` | Dataset-profile property | **deprecated** → use `software_artifactSize` |
 | `dataset_intendedUse` | Dataset-profile property | **deprecated** → use Core `intendedUse` |
 
 See [spdx3.1/example06.spdx3.json](./spdx3.1/example06.spdx3.json) for the
 updated form using `software_artifactSize: 314572800` (~300 MB) and Core
 `intendedUse`.
 
-## Profile Conformance
+## Profile conformance
 
 `core`, `dataset`
 
-## SPDX Files
+## SPDX files
 
 | Version | File |
 | --------- | ------ |
-| SPDX 3.0.1 | [spdx3.0/example06.spdx3.json](./spdx3.0/example06.spdx3.json) |
+| SPDX 3.0 | [spdx3.0/example06.spdx3.json](./spdx3.0/example06.spdx3.json) |
 | SPDX 3.1 (draft) | [spdx3.1/example06.spdx3.json](./spdx3.1/example06.spdx3.json) |
 
-## Key Properties Demonstrated
+## Key properties demonstrated
 
 | Property | Value / Notes |
 | ---------- | --------------- |
-| `dataset_datasetType` | `structured` (tabular; note: `syntactic` ≠ synthetic data) |
-| `dataset_datasetNoise` | GAN distributional limitations documented |
-| `dataset_dataCollectionProcess` | GAN generation methodology (not collection) |
-| `dataset_hasSensitivePersonalInformation` | `no` (confirmed by privacy audit) |
 | `dataset_confidentialityLevel` | `clear` |
-| `dataset_datasetSize` | `1000000` records (SPDX 3.0, deprecated in 3.1) |
+| `dataset_dataCollectionProcess` | GAN generation methodology (not collection) |
+| `dataset_datasetNoise` | GAN distributional limitations documented |
+| `dataset_datasetSize` | `314572800` bytes (~300 MB) (SPDX 3.0, deprecated in 3.1) |
+| `dataset_datasetType` | `structured` (tabular; note: `syntactic` ≠ synthetic data) |
+| `dataset_hasSensitivePersonalInformation` | `no` (confirmed by privacy audit) |
 | `dataset_intendedUse` | Research only (SPDX 3.0, deprecated in 3.1) |

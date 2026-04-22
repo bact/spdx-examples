@@ -3,7 +3,7 @@ SPDX-FileType: DOCUMENTATION
 SPDX-License-Identifier: CC-BY-4.0
 ---
 
-# AI Profile Example 03 — Medical AI with Safety Classification
+# AI profile example 03 — Medical AI with safety classification
 
 ## Description
 
@@ -13,17 +13,17 @@ network that grades diabetic retinopathy severity from retinal fundus photograph
 The SBOM ([spdx3.0/example03.spdx3.json](./spdx3.0/example03.spdx3.json))
 demonstrates AI-profile properties relevant to **high-risk regulated AI systems**:
 
+- `ai_limitation` — documents known constraints and out-of-scope populations
+- `ai_modelExplainability` — describes how model decisions can be interpreted
+  (Grad-CAM saliency maps, MC Dropout uncertainty)
 - `ai_safetyRiskAssessment` — classifies the model's safety risk level
   (`serious` / `high` / `medium` / `low`)
 - `ai_standardCompliance` — lists regulatory and technical standards the system
   must comply with (IEC 62304, ISO 14971, EU MDR)
-- `ai_limitation` — documents known constraints and out-of-scope populations
-- `ai_modelExplainability` — describes how model decisions can be interpreted
-  (Grad-CAM saliency maps, MC Dropout uncertainty)
 - `ai_useSensitivePersonalInformation` — declared `yes` because the model
   processes patient medical imagery
 
-## SPDX 3.0 vs 3.1 Note
+## SPDX 3.0 vs 3.1 note
 
 `ai_autonomyType` (SPDX 3.0, `PresenceType`: yes / no / noAssertion) is the
 property used in SPDX 3.0 to indicate whether the AI system operates
@@ -37,23 +37,23 @@ used as a data property. See
 [ai/example05](../example05/) and [ai/example06](../example06/) for examples
 that explicitly set `ai_autonomyType` and provide 3.1 counterparts.
 
-## Profile Conformance
+## Profile conformance
 
 `core`, `ai`
 
-## SPDX Files
+## SPDX files
 
 | Version | File |
 | ------- | ---- |
-| SPDX 3.0.1 | [spdx3.0/example03.spdx3.json](./spdx3.0/example03.spdx3.json) |
+| SPDX 3.0 | [spdx3.0/example03.spdx3.json](./spdx3.0/example03.spdx3.json) |
 
-## Key Properties Demonstrated
+## Key properties demonstrated
 
 | Property | Value |
 | -------- | ----- |
-| `ai_safetyRiskAssessment` | `high` |
-| `ai_standardCompliance` | IEC 62304, ISO 14971, EU MDR 2017/745 |
 | `ai_limitation` | Out-of-scope equipment, pediatric patients |
 | `ai_modelExplainability` | Grad-CAM, MC Dropout |
-| `ai_useSensitivePersonalInformation` | `yes` |
+| `ai_safetyRiskAssessment` | `high` |
+| `ai_standardCompliance` | IEC 62304, ISO 14971, EU MDR 2017/745 |
 | `ai_typeOfModel` | convolutional neural network, supervised |
+| `ai_useSensitivePersonalInformation` | `yes` |

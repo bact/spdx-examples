@@ -132,7 +132,7 @@
             "dataset_datasetType": [
                 "image"
             ],
-            "dataset_datasetSize": 28000,
+            "dataset_datasetSize": 59768832,
             "dataset_confidentialityLevel": "amber",
             "dataset_dataCollectionProcess": "Camera footage captured with consent from 12 facilities. Annotations created by 8 trained annotators using CVAT. Inter-annotator agreement measured by mAP: 0.94.",
             "dataset_knownBias": [

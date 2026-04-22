@@ -59,7 +59,7 @@
             "dataset_datasetType": [
                 "image"
             ],
-            "dataset_datasetSize": 50000,
+            "dataset_datasetSize": 21474836480,
             "dataset_datasetAvailability": "registration",
             "dataset_confidentialityLevel": "clear",
             "dataset_dataCollectionProcess": "Images sourced from three channels: (1) laboratory sessions with consenting adult volunteers photographed under 4 different lighting conditions; (2) licensed stock photographs from commercial providers; (3) Creative Commons-licensed images from Flickr. Each image independently labeled by 3 annotators; majority vote used as ground truth. Annotators were trained on Paul Ekman's FACS basic emotion categories.",
@@ -83,7 +83,7 @@
                     "hashValue": "a7f3b92e1cd458f9026e3a4b57c8d1e0f2a9b4c6d8e0f1a2b3c4d5e6f7a8b9c0"
                 }
             ],
-            "comment": "SPDX 3.0 NOTE: 'dataset_datasetSize' (value: 50000 items) is DEPRECATED in SPDX 3.1 — use 'software_artifactSize' (artifact size in bytes) instead. Also, 'dataset_intendedUse' is DEPRECATED in SPDX 3.1 — use Core-level 'intendedUse' property instead."
+            "comment": "SPDX 3.0 NOTE: 'dataset_datasetSize' (value: 21474836480 bytes) is DEPRECATED in SPDX 3.1 — use 'software_artifactSize' instead (same unit: bytes). Also, 'dataset_intendedUse' is DEPRECATED in SPDX 3.1 — use Core-level 'intendedUse' property instead."
         },
         {
             "type": "Relationship",

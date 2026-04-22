@@ -120,8 +120,8 @@
             ],
             "ai_limitation": "Performance degrades under low-light conditions below 50 lux. Not validated for outdoor environments or facilities with non-standard floor markings. Class 'safety hazard (spill)' has lower recall (0.71) due to limited training examples.",
             "ai_useSensitivePersonalInformation": "yes",
-            "isoAutomationLevel": "humanDecisionWithPartialAutomation",
-            "comment": "SPDX 3.1 CHANGE: 'ai_autonomyType' (SPDX 3.0, PresenceType: yes/no/noAssertion) replaced by 'isoAutomationLevel' (Core property, ISO 22989-based vocabulary). Value 'humanDecisionWithPartialAutomation' reflects that the system flags hazards autonomously but human operators make the final safety response decision. Compare with SPDX 3.0 value 'no' (ai_autonomyType) in spdx3.0/example05.spdx3.json."
+            "isoAutomationLevel": "partialAutomation",
+            "comment": "SPDX 3.1 CHANGE: 'ai_autonomyType' (SPDX 3.0, PresenceType: yes/no/noAssertion) replaced by 'isoAutomationLevel' (Core property, ISO 22989-based vocabulary). Value 'partialAutomation' reflects that the system flags hazards autonomously but human operators make the final safety response decision. Compare with SPDX 3.0 value 'no' (ai_autonomyType) in spdx3.0/example05.spdx3.json."
         },
         {
             "type": "dataset_DatasetPackage",
@@ -141,7 +141,7 @@
                 "Worker class annotations may contain workers of primarily European appearance due to facility demographics"
             ],
             "dataset_hasSensitivePersonalInformation": "yes",
-            "comment": "SPDX 3.1 CHANGE: 'dataset_datasetSize' (28000 items) replaced by 'software_artifactSize' (59768832 bytes, approx. 57 MB). Compare with SPDX 3.0 version in spdx3.0/example05.spdx3.json."
+            "comment": "SPDX 3.1 CHANGE: 'dataset_datasetSize: 59768832' (bytes, SPDX 3.0, deprecated) renamed to 'software_artifactSize: 59768832' (~57 MB) in SPDX 3.1. Compare with SPDX 3.0 version in spdx3.0/example05.spdx3.json."
         },
         {
             "type": "Relationship",

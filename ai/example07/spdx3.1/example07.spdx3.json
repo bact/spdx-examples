@@ -120,7 +120,7 @@
             ],
             "ai_informationAboutApplication": "Deployed in-process within the FinApp backend service. Processes uploaded PDF and image documents. Extracted fields include: account holder name, account number, balance, transaction history, employer name, gross income.",
             "ai_useSensitivePersonalInformation": "yes",
-            "isoAutomationLevel": "humanDecisionWithPartialAutomation",
+            "isoAutomationLevel": "partialAutomation",
             "ai_metric": [
                 {
                     "type": "DictionaryEntry",
@@ -145,7 +145,7 @@
                     "issuingAuthority": "HuggingFace Hub"
                 }
             ],
-            "comment": "SPDX 3.1 CHANGE: 'ai_autonomyType: no' replaced by 'isoAutomationLevel: humanDecisionWithPartialAutomation' — document extraction results are reviewed by loan officers before decisions are made."
+            "comment": "SPDX 3.1 CHANGE: 'ai_autonomyType: no' replaced by 'isoAutomationLevel: partialAutomation' — document extraction results are reviewed by loan officers before decisions are made."
         },
         {
             "type": "Organization",

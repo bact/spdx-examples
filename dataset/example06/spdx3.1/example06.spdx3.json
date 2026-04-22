@@ -84,7 +84,7 @@
                     "hashValue": "d0f6e15b4ac78c93359b6d7ae4f1e3d2c5b8a1f3e5d7c9b1a3e5d7c9b1a3e5d7"
                 }
             ],
-            "comment": "SPDX 3.1 CHANGES: (1) 'dataset_datasetSize: 1000000' (item count, SPDX 3.0, deprecated) replaced by 'software_artifactSize: 314572800' (~300 MB). (2) 'dataset_intendedUse' (SPDX 3.0, deprecated) replaced by Core-level 'intendedUse'. Note: 'syntactic' in SPDX refers to data about grammatical/syntactic structure, NOT artificially generated data — this dataset correctly uses 'structured' only. Compare with spdx3.0/example06.spdx3.json."
+            "comment": "SPDX 3.1 CHANGES: (1) 'dataset_datasetSize: 314572800' (bytes, SPDX 3.0, deprecated) renamed to 'software_artifactSize: 314572800' (~300 MB) in SPDX 3.1. (2) 'dataset_intendedUse' (SPDX 3.0, deprecated) replaced by Core-level 'intendedUse'. Note: 'syntactic' in SPDX refers to data about grammatical/syntactic structure, NOT artificially generated data — this dataset correctly uses 'structured' only. Compare with spdx3.0/example06.spdx3.json."
         },
         {
             "type": "Relationship",

@@ -112,7 +112,7 @@
       "dataset_knownBias": [
         "Data in some geographical areas are more completed than the others."
       ],
-      "comment": "This is a small excerpt of the full dataset. SPDX 3.1 CHANGES: (1) 'dataset_datasetSize: 2689' (row count, SPDX 3.0, deprecated) replaced by 'software_artifactSize: 204800' (~200 KB for this excerpt). (2) 'dataset_intendedUse' (SPDX 3.0, deprecated) replaced by Core-level 'intendedUse'. Compare with spdx3.0/example01.spdx3.json."
+      "comment": "This is a small excerpt of the full dataset. SPDX 3.1 CHANGES: (1) 'dataset_datasetSize: 204800' (bytes, SPDX 3.0, deprecated) renamed to 'software_artifactSize: 204800' (~200 KB) in SPDX 3.1. (2) 'dataset_intendedUse' (SPDX 3.0, deprecated) replaced by Core-level 'intendedUse'. Compare with spdx3.0/example01.spdx3.json."
     },
     {
       "type": "software_File",

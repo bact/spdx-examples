@@ -83,7 +83,7 @@
                     "hashValue": "a7f3b92e1cd458f9026e3a4b57c8d1e0f2a9b4c6d8e0f1a2b3c4d5e6f7a8b9c0"
                 }
             ],
-            "comment": "SPDX 3.1 CHANGES: (1) 'dataset_datasetSize: 50000' (item count, SPDX 3.0, deprecated) replaced by 'software_artifactSize: 21474836480' (artifact size in bytes, ~20 GB). (2) 'dataset_intendedUse' (SPDX 3.0, deprecated) replaced by Core-level 'intendedUse' property. Compare with SPDX 3.0 version in spdx3.0/example02.spdx3.json."
+            "comment": "SPDX 3.1 CHANGES: (1) 'dataset_datasetSize: 21474836480' (bytes, SPDX 3.0, deprecated) renamed to 'software_artifactSize: 21474836480' (~20 GB) in SPDX 3.1. (2) 'dataset_intendedUse' (SPDX 3.0, deprecated) replaced by Core-level 'intendedUse' property. Compare with SPDX 3.0 version in spdx3.0/example02.spdx3.json."
         },
         {
             "type": "Relationship",
