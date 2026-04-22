@@ -21,6 +21,14 @@ tags
 # Persistent undo
 [._]*.un~
 
+# SPDX diagram intermediates (auto-generated, do not commit)
+*.json.puml
+*.simplified.puml
+*.simplified.svg
+# PlantUML-rendered SVGs (intermediate step before PNG conversion)
+ai/example01/spdx3.0/*.svg
+ai/example02/spdx3.0/*.svg
+
 # macOS
 .DS_Store
 .AppleDouble

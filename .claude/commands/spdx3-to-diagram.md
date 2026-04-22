@@ -54,14 +54,21 @@ plantuml -tsvg OUTPUT.simplified.puml
 # Output: OUTPUT.simplified.svg
 ```
 
-### Step 4 — Convert SVG to 8K PNG (2-step for quality)
+### Step 4 — Convert SVG to high-res PNG (2-step for quality)
 ```bash
-# SVG → PNG at 8K width (7680 px)
+# SVG → PNG at 7680px wide; height follows the diagram's natural aspect ratio.
+# Do NOT specify -h: combining -w and -h without -a distorts; with -a it shrinks
+# diagrams whose natural height exceeds 4320px (portrait layouts lose resolution).
 rsvg-convert -w 7680 OUTPUT.simplified.svg -o EXAMPLE_DIR/exampleNN.spdx3.png
 ```
 
 > Do NOT use `plantuml -tpng` directly — the resolution will be too low.
 > Always go SVG → PNG via `rsvg-convert`.
+> Do NOT add `-h`: it either distorts (without `-a`) or caps resolution for tall diagrams (with `-a`).
+> The `left to right direction` directive in the PlantUML skinparams (set by
+> `simplify_puml.py`) is the primary driver of horizontal layout — diagrams
+> flow left-to-right, producing wide canvases naturally.
+> Custom `.puml` files must also include `left to right direction`.
 
 ## For complex examples (many files or elements)
 
