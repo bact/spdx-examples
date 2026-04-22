@@ -35,6 +35,6 @@ access controls.
 | `dataset_dataCollectionProcess` | Generation methodology documented (not collection) |
 | `dataset_datasetNoise` | Known limitations of synthetic generation |
 | `dataset_datasetSize` | `314572800` bytes (~300 MB) — deprecated in SPDX 3.1, use `software_artifactSize` |
-| `dataset_datasetType` | `structured` (tabular); note: `syntactic` in SPDX means data about grammatical/syntactic structure (e.g. parse trees) and is **not** the same as synthetic data — do not use `syntactic` for generated datasets |
+| `dataset_datasetType` | `structured` (tabular) |
 | `dataset_hasSensitivePersonalInformation` | `no` — synthetic data contains no real customer records |
 | `dataset_intendedUse` | Research only, not production deployment — deprecated in SPDX 3.1, use Core `intendedUse` |
