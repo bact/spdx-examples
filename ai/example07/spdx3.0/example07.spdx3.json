@@ -1,0 +1,231 @@
+{
+    "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+    "@graph": [
+        {
+            "type": "CreationInfo",
+            "@id": "_:creationinfo",
+            "specVersion": "3.0.1",
+            "createdBy": [
+                "https://spdx.org/spdxdocs/ai-example07-a1b2c3d4-e5f6-7890-abcd-000000007001#Organization1"
+            ],
+            "created": "2025-01-10T00:00:00Z"
+        },
+        {
+            "type": "Organization",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example07-a1b2c3d4-e5f6-7890-abcd-000000007001#Organization1",
+            "creationInfo": "_:creationinfo",
+            "name": "FinApp Corp"
+        },
+        {
+            "type": "SpdxDocument",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example07-a1b2c3d4-e5f6-7890-abcd-000000007001",
+            "creationInfo": "_:creationinfo",
+            "profileConformance": [
+                "core",
+                "ai",
+                "software"
+            ],
+            "rootElement": [
+                "https://spdx.org/spdxdocs/ai-example07-a1b2c3d4-e5f6-7890-abcd-000000007001#SBOM1"
+            ]
+        },
+        {
+            "type": "software_Sbom",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example07-a1b2c3d4-e5f6-7890-abcd-000000007001#SBOM1",
+            "creationInfo": "_:creationinfo",
+            "profileConformance": [
+                "core",
+                "ai",
+                "software"
+            ],
+            "rootElement": [
+                "https://spdx.org/spdxdocs/ai-example07-a1b2c3d4-e5f6-7890-abcd-000000007001#Package1"
+            ],
+            "software_sbomType": [
+                "runtime"
+            ]
+        },
+        {
+            "type": "software_Package",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example07-a1b2c3d4-e5f6-7890-abcd-000000007001#Package1",
+            "creationInfo": "_:creationinfo",
+            "name": "FinApp Credit Advisor",
+            "summary": "Personal finance application with embedded third-party AI credit scoring and document extraction components.",
+            "description": "A consumer-facing personal finance application that integrates two third-party AI services: a credit risk scoring API and a financial document extraction model. This SBOM documents the AI supply chain embedded within the application, enabling third-party AI risk assessment per regulatory requirements.",
+            "software_packageVersion": "4.2.1",
+            "software_primaryPurpose": "application",
+            "software_downloadLocation": "https://example.com/finapp-credit-advisor",
+            "software_copyrightText": "Copyright 2025 FinApp Corp"
+        },
+        {
+            "type": "ai_AIPackage",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example07-a1b2c3d4-e5f6-7890-abcd-000000007001#AIPackage1",
+            "creationInfo": "_:creationinfo",
+            "name": "CreditSense API",
+            "summary": "Third-party credit risk scoring model accessed via API. Vendor: Acme Credit Analytics.",
+            "description": "A machine learning credit risk scoring service provided by Acme Credit Analytics. The model evaluates credit applications and returns a risk score (0-1000) and risk tier (low/medium/high). Consumed by FinApp Credit Advisor to assist credit limit recommendations. The model internals are not disclosed by the vendor; metadata below reflects what is available from vendor documentation.",
+            "software_packageVersion": "v3",
+            "software_primaryPurpose": "model",
+            "software_downloadLocation": "noAssertion",
+            "ai_typeOfModel": [
+                "noAssertion"
+            ],
+            "ai_domain": [
+                "credit risk assessment",
+                "financial services"
+            ],
+            "ai_informationAboutApplication": "Accessed as a REST API. Input: applicant financial features (income, debt, credit history length, payment history). Output: score (0-1000) and risk tier. API call made at credit application submission time.",
+            "ai_useSensitivePersonalInformation": "yes",
+            "ai_autonomyType": "noAssertion",
+            "ai_standardCompliance": [
+                "EU AI Act Article 10 (High-Risk AI System)",
+                "Equal Credit Opportunity Act (ECOA) compliance claimed by vendor"
+            ],
+            "ai_limitation": "Vendor has not disclosed training data composition, model architecture, or fairness evaluation methodology. Independent fairness audit not available. Adverse action explanations provided by vendor API but explainability methodology not documented.",
+            "externalIdentifier": [
+                {
+                    "type": "ExternalIdentifier",
+                    "externalIdentifierType": "other",
+                    "identifier": "creditsense-api-v3",
+                    "identifierLocator": [
+                        "https://docs.acme-credit.example.com/api/v3"
+                    ],
+                    "issuingAuthority": "Acme Credit Analytics"
+                }
+            ],
+            "originatedBy": [
+                "https://spdx.org/spdxdocs/ai-example07-a1b2c3d4-e5f6-7890-abcd-000000007001#Organization2"
+            ],
+            "suppliedBy": "https://spdx.org/spdxdocs/ai-example07-a1b2c3d4-e5f6-7890-abcd-000000007001#Organization2",
+            "comment": "SPDX 3.0 NOTE: This element demonstrates third-party AI supply chain documentation where vendor does not disclose model internals. 'noAssertion' is used for unknown properties. 'ai_autonomyType' (DEPRECATED in SPDX 3.1, replaced by 'isoAutomationLevel') is set to 'noAssertion' as vendor has not disclosed autonomy level."
+        },
+        {
+            "type": "ai_AIPackage",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example07-a1b2c3d4-e5f6-7890-abcd-000000007001#AIPackage2",
+            "creationInfo": "_:creationinfo",
+            "name": "DocExtract ML",
+            "summary": "Open-source financial document extraction model (HuggingFace) for parsing bank statements and pay stubs.",
+            "description": "An open-source document understanding model based on LayoutLMv3, fine-tuned for extraction of structured fields from financial documents (bank statements, pay stubs, tax forms). Integrated directly into the FinApp backend rather than consumed via API. Model weights downloaded from HuggingFace Hub.",
+            "software_packageVersion": "1.4.0",
+            "software_primaryPurpose": "model",
+            "software_downloadLocation": "https://huggingface.co/example-org/docextract-ml-financial",
+            "ai_typeOfModel": [
+                "transformer",
+                "document understanding",
+                "named entity recognition"
+            ],
+            "ai_domain": [
+                "document processing",
+                "financial document extraction"
+            ],
+            "ai_informationAboutApplication": "Deployed in-process within the FinApp backend service. Processes uploaded PDF and image documents. Extracted fields include: account holder name, account number, balance, transaction history, employer name, gross income.",
+            "ai_useSensitivePersonalInformation": "yes",
+            "ai_autonomyType": "no",
+            "ai_metric": [
+                {
+                    "type": "DictionaryEntry",
+                    "key": "field_extraction_F1",
+                    "value": "0.947"
+                },
+                {
+                    "type": "DictionaryEntry",
+                    "key": "document_level_accuracy",
+                    "value": "0.923"
+                }
+            ],
+            "ai_limitation": "Performance degrades on handwritten or heavily formatted documents. Not validated for documents in languages other than English. Requires document quality score above 0.6 (assessed by companion quality check module).",
+            "externalIdentifier": [
+                {
+                    "type": "ExternalIdentifier",
+                    "externalIdentifierType": "other",
+                    "identifier": "example-org/docextract-ml-financial",
+                    "identifierLocator": [
+                        "https://huggingface.co/example-org/docextract-ml-financial"
+                    ],
+                    "issuingAuthority": "HuggingFace Hub"
+                }
+            ]
+        },
+        {
+            "type": "Organization",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example07-a1b2c3d4-e5f6-7890-abcd-000000007001#Organization2",
+            "creationInfo": "_:creationinfo",
+            "name": "Acme Credit Analytics"
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example07-a1b2c3d4-e5f6-7890-abcd-000000007001#Relationship1",
+            "creationInfo": "_:creationinfo",
+            "relationshipType": "dependsOn",
+            "from": "https://spdx.org/spdxdocs/ai-example07-a1b2c3d4-e5f6-7890-abcd-000000007001#Package1",
+            "to": [
+                "https://spdx.org/spdxdocs/ai-example07-a1b2c3d4-e5f6-7890-abcd-000000007001#AIPackage1"
+            ],
+            "description": "FinApp Credit Advisor depends on CreditSense API for credit risk scoring."
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example07-a1b2c3d4-e5f6-7890-abcd-000000007001#Relationship2",
+            "creationInfo": "_:creationinfo",
+            "relationshipType": "dependsOn",
+            "from": "https://spdx.org/spdxdocs/ai-example07-a1b2c3d4-e5f6-7890-abcd-000000007001#Package1",
+            "to": [
+                "https://spdx.org/spdxdocs/ai-example07-a1b2c3d4-e5f6-7890-abcd-000000007001#AIPackage2"
+            ],
+            "description": "FinApp Credit Advisor depends on DocExtract ML for financial document parsing."
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example07-a1b2c3d4-e5f6-7890-abcd-000000007001#Relationship3",
+            "creationInfo": "_:creationinfo",
+            "relationshipType": "hasDeclaredLicense",
+            "from": "https://spdx.org/spdxdocs/ai-example07-a1b2c3d4-e5f6-7890-abcd-000000007001#Package1",
+            "to": [
+                "https://spdx.org/spdxdocs/ai-example07-a1b2c3d4-e5f6-7890-abcd-000000007001#LicenseExpression1"
+            ]
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example07-a1b2c3d4-e5f6-7890-abcd-000000007001#Relationship4",
+            "creationInfo": "_:creationinfo",
+            "relationshipType": "hasConcludedLicense",
+            "from": "https://spdx.org/spdxdocs/ai-example07-a1b2c3d4-e5f6-7890-abcd-000000007001#Package1",
+            "to": [
+                "https://spdx.org/spdxdocs/ai-example07-a1b2c3d4-e5f6-7890-abcd-000000007001#LicenseExpression1"
+            ]
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example07-a1b2c3d4-e5f6-7890-abcd-000000007001#Relationship5",
+            "creationInfo": "_:creationinfo",
+            "relationshipType": "hasDeclaredLicense",
+            "from": "https://spdx.org/spdxdocs/ai-example07-a1b2c3d4-e5f6-7890-abcd-000000007001#AIPackage2",
+            "to": [
+                "https://spdx.org/licenses/MIT"
+            ]
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example07-a1b2c3d4-e5f6-7890-abcd-000000007001#Relationship6",
+            "creationInfo": "_:creationinfo",
+            "relationshipType": "hasConcludedLicense",
+            "from": "https://spdx.org/spdxdocs/ai-example07-a1b2c3d4-e5f6-7890-abcd-000000007001#AIPackage2",
+            "to": [
+                "https://spdx.org/licenses/MIT"
+            ]
+        },
+        {
+            "type": "simplelicensing_LicenseExpression",
+            "spdxId": "https://spdx.org/spdxdocs/ai-example07-a1b2c3d4-e5f6-7890-abcd-000000007001#LicenseExpression1",
+            "creationInfo": "_:creationinfo",
+            "simplelicensing_licenseExpression": "LicenseRef-FinApp-Proprietary"
+        },
+        {
+            "type": "simplelicensing_LicenseExpression",
+            "spdxId": "https://spdx.org/licenses/MIT",
+            "creationInfo": "_:creationinfo",
+            "simplelicensing_licenseExpression": "MIT",
+            "simplelicensing_licenseListVersion": "3.25.0"
+        }
+    ]
+}

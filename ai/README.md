@@ -13,15 +13,22 @@ for various examples of AI applications and models.
 Directories of the form `example##` are structured as follows:
 
 - `content/`: contains the example's content (data files, source code, etc.)
-- `spdx3.0/`: contains one or more SPDX documents for the example
+- `spdx3.0/`: contains one or more SPDX 3.0.1 documents for the example
+- `spdx3.1/`: contains SPDX 3.1 counterpart documents (for examples that use
+  properties deprecated in SPDX 3.1)
 - `README.md`: more details about the particular example
 
 ## Examples
 
-|  # | Sources | Binaries | Data | SPDX | Comments |
-|----|---------|----------|------|------|----------|
-| [1](./example01/) | - | - | - | 1 document | Demonstrating `dependsOn`, `testedOn`, and `trainedOn` relationships |
-| [2](./example02/) | 4 Python files | 1 model file | 3 data files | 1 document | Demonstrating `generates`, `hasDataFile`, and `hasDocumentation` (lifecycle-scoped) relationships |
+| # | Sources | Binaries | Data | SPDX 3.0 | SPDX 3.1 | Focus |
+| - | ------- | -------- | ---- | -------- | -------- | ----- |
+| [01](./example01/) | - | - | - | 1 document | - | `dependsOn`, `testedOn`, `trainedOn` relationships |
+| [02](./example02/) | 4 Python files | 1 model file | 3 data files | 1 document | 1 document | `generates`, `hasDataFile`, `hasDocumentation`; `ai_energyConsumption`, `ai_hyperparameter`; **3.0→3.1**: `ai_autonomyType` → `isoAutomationLevel` |
+| [03](./example03/) | - | - | - | 1 document | - | `ai_safetyRiskAssessment`, `ai_standardCompliance`, `ai_limitation` (medical AI) |
+| [04](./example04/) | - | - | - | 1 document | 1 document | `ai_hyperparameter`, `ai_modelExplainability`, `trainedOn`, `dependsOn` base model; **3.0→3.1**: `dataset_datasetSize` → `software_artifactSize` |
+| [05](./example05/) | - | - | - | 1 document | 1 document | `ai_metric`, `ai_metricDecisionThreshold`; **3.0→3.1**: `ai_autonomyType` → `isoAutomationLevel` |
+| [06](./example06/) | - | - | - | 1 document | 1 document | `ai_energyConsumption` (training + finetuning + inference); **3.0→3.1**: `ai_autonomyType` → `isoAutomationLevel` |
+| [07](./example07/) | - | - | - | 1 document | 1 document | Third-party AI supply chain, `noAssertion` for opaque vendor model; **3.0→3.1**: `ai_autonomyType` → `isoAutomationLevel` |
 
 ## Implementing SBOM for AI systems
 

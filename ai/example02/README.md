@@ -10,7 +10,7 @@ SPDX-License-Identifier: CC-BY-4.0
 This example illustrates a software bill of materials (SBOM) for an AI
 application that employs machine learning to perform a text sentiment analysis.
 
-The SBOM ([spdx3.0/sbom.spdx.json](./spdx3.0/sbom.spdx.json)) demonstrates
+The SBOM ([spdx3.0/sbom.spdx3.json](./spdx3.0/sbom.spdx3.json)) demonstrates
 the structure between `AIPackage`, `DatasetPackage`, and their technical
 documentation through (lifecycle-scoped) relationship types such as
 `dependsOn`,
@@ -19,6 +19,24 @@ documentation through (lifecycle-scoped) relationship types such as
 `hasDocumentation`,
 `testedOn`, and
 `trainedOn`.
+
+## SPDX 3.0 vs 3.1 Note
+
+| Property | SPDX 3.0 | SPDX 3.1 |
+| ---------- | ---------- | ---------- |
+| `ai_autonomyType` | `"yes"` (PresenceType) | **deprecated** → use `isoAutomationLevel` |
+| `dataset_datasetSize` | `117553` (item count) | **deprecated** → use `software_artifactSize` (bytes) |
+
+See [spdx3.1/sbom.spdx3.json](./spdx3.1/sbom.spdx3.json) for the updated form
+using `isoAutomationLevel: conditionalAutomation` and
+`software_artifactSize: 11534336` (~11 MB).
+
+## SPDX Files
+
+| Version | File |
+| --------- | ------ |
+| SPDX 3.0.1 | [spdx3.0/sbom.spdx3.json](./spdx3.0/sbom.spdx3.json) |
+| SPDX 3.1 (draft) | [spdx3.1/sbom.spdx3.json](./spdx3.1/sbom.spdx3.json) |
 
 [![A diagram showing relationships between elements in the Sentiment Demo package (Example 2).](./sbom-spdx3.png "A diagram showing relationships between elements in the Sentiment Demo package (Example 2).")](sbom-spdx3.png)
 

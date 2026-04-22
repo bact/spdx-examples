@@ -1,0 +1,195 @@
+{
+  "@context": "https://spdx.org/rdf/3.1.0/spdx-context.jsonld",
+  "@graph": [
+    {
+      "type": "CreationInfo",
+      "@id": "_:creationinfo",
+      "specVersion": "3.1.0",
+      "createdBy": [
+        "https://spdx.org/spdxdocs/dataset-example01-b1b2c3d4-e5f6-7890-abcd-000000001002#Person1"
+      ],
+      "created": "2025-01-01T00:00:00Z"
+    },
+    {
+      "type": "Person",
+      "spdxId": "https://spdx.org/spdxdocs/dataset-example01-b1b2c3d4-e5f6-7890-abcd-000000001002#Person1",
+      "creationInfo": "_:creationinfo",
+      "name": "Arthit Suriyawongkul",
+      "externalIdentifier": [
+        {
+          "type": "ExternalIdentifier",
+          "externalIdentifierType": "email",
+          "identifier": "suriyawa@tcd.ie"
+        }
+      ]
+    },
+    {
+      "type": "Organization",
+      "spdxId": "https://spdx.org/spdxdocs/dataset-example01-b1b2c3d4-e5f6-7890-abcd-000000001002#Organization1",
+      "creationInfo": "_:creationinfo",
+      "name": "Our World in Data",
+      "externalIdentifier": [
+        {
+          "type": "ExternalIdentifier",
+          "externalIdentifierType": "other",
+          "issuingAuthority": "GitHub",
+          "identifier": "owid",
+          "identifierLocator": [
+            "https://github.com/owid/"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "SpdxDocument",
+      "spdxId": "https://spdx.org/spdxdocs/dataset-example01-b1b2c3d4-e5f6-7890-abcd-000000001002",
+      "creationInfo": "_:creationinfo",
+      "profileConformance": [
+        "core",
+        "dataset"
+      ],
+      "rootElement": [
+        "https://spdx.org/spdxdocs/dataset-example01-b1b2c3d4-e5f6-7890-abcd-000000001002#SBOM1"
+      ]
+    },
+    {
+      "type": "software_Sbom",
+      "spdxId": "https://spdx.org/spdxdocs/dataset-example01-b1b2c3d4-e5f6-7890-abcd-000000001002#SBOM1",
+      "creationInfo": "_:creationinfo",
+      "profileConformance": [
+        "core",
+        "dataset"
+      ],
+      "rootElement": [
+        "https://spdx.org/spdxdocs/dataset-example01-b1b2c3d4-e5f6-7890-abcd-000000001002#DatasetPackage1"
+      ],
+      "software_sbomType": [
+        "analyzed"
+      ]
+    },
+    {
+      "type": "dataset_DatasetPackage",
+      "spdxId": "https://spdx.org/spdxdocs/dataset-example01-b1b2c3d4-e5f6-7890-abcd-000000001002#DatasetPackage1",
+      "creationInfo": "_:creationinfo",
+      "name": "Our World in Data CO2 and Greenhouse Gas Emissions dataset",
+      "originatedBy": [
+        "https://spdx.org/spdxdocs/dataset-example01-b1b2c3d4-e5f6-7890-abcd-000000001002#Organization1"
+      ],
+      "suppliedBy": "https://spdx.org/spdxdocs/dataset-example01-b1b2c3d4-e5f6-7890-abcd-000000001002#Organization1",
+      "builtTime": "2023-12-16T11:22:38Z",
+      "releaseTime": "2024-04-15T08:10:00Z",
+      "software_packageVersion": "2024-04-15",
+      "software_copyrightText": "Copyright Our World in Data",
+      "software_downloadLocation": "https://github.com/owid/co2-data/",
+      "software_artifactSize": 204800,
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha1",
+          "hashValue": "32657f0d033fc07a7420be36a6af9083c6a63489"
+        },
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "434d75c84cf86456c16193dbc53beef31eb63f3387425882ddb2ef6acb9d472c"
+        }
+      ],
+      "software_primaryPurpose": "data",
+      "intendedUse": "To make the data about greenhouse gas emissions accessible.",
+      "dataset_confidentialityLevel": "clear",
+      "dataset_dataPreprocessing": [
+        "The dataset is built upon a number of datasets and processing steps.",
+        "See https://github.com/owid/co2-data/blob/master/README.md for sources and processing codes."
+      ],
+      "dataset_datasetAvailability": "directDownload",
+      "dataset_dataCollectionProcess": "The data is collected from various sources, including international organizations and research institutions.",
+      "dataset_datasetType": [
+        "structured",
+        "timestamp"
+      ],
+      "dataset_datasetUpdateMechanism": "Publish updated data as it becomes available. Most are on an annual basis.",
+      "dataset_hasSensitivePersonalInformation": "no",
+      "dataset_knownBias": [
+        "Data in some geographical areas are more completed than the others."
+      ],
+      "comment": "This is a small excerpt of the full dataset. SPDX 3.1 CHANGES: (1) 'dataset_datasetSize: 2689' (row count, SPDX 3.0, deprecated) replaced by 'software_artifactSize: 204800' (~200 KB for this excerpt). (2) 'dataset_intendedUse' (SPDX 3.0, deprecated) replaced by Core-level 'intendedUse'. Compare with spdx3.0/example01.spdx3.json."
+    },
+    {
+      "type": "software_File",
+      "spdxId": "https://spdx.org/spdxdocs/dataset-example01-b1b2c3d4-e5f6-7890-abcd-000000001002#File1",
+      "creationInfo": "_:creationinfo",
+      "name": "data.csv",
+      "contentType": "text/csv;charset=UTF-8",
+      "software_primaryPurpose": "data",
+      "releaseTime": "2024-04-15T08:10:00Z",
+      "originatedBy": [
+        "https://spdx.org/spdxdocs/dataset-example01-b1b2c3d4-e5f6-7890-abcd-000000001002#Organization1"
+      ]
+    },
+    {
+      "type": "software_File",
+      "spdxId": "https://spdx.org/spdxdocs/dataset-example01-b1b2c3d4-e5f6-7890-abcd-000000001002#File2",
+      "creationInfo": "_:creationinfo",
+      "name": "codebook.csv",
+      "contentType": "text/csv;charset=UTF-8",
+      "software_primaryPurpose": "data",
+      "releaseTime": "2024-04-15T08:10:00Z",
+      "originatedBy": [
+        "https://spdx.org/spdxdocs/dataset-example01-b1b2c3d4-e5f6-7890-abcd-000000001002#Organization1"
+      ],
+      "description": "A description of each column in data.csv."
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "https://spdx.org/spdxdocs/dataset-example01-b1b2c3d4-e5f6-7890-abcd-000000001002#Relationship1",
+      "creationInfo": "_:creationinfo",
+      "relationshipType": "contains",
+      "from": "https://spdx.org/spdxdocs/dataset-example01-b1b2c3d4-e5f6-7890-abcd-000000001002#DatasetPackage1",
+      "to": [
+        "https://spdx.org/spdxdocs/dataset-example01-b1b2c3d4-e5f6-7890-abcd-000000001002#File1",
+        "https://spdx.org/spdxdocs/dataset-example01-b1b2c3d4-e5f6-7890-abcd-000000001002#File2"
+      ],
+      "description": "DatasetPackage1 contains data.csv and codebook.csv."
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "https://spdx.org/spdxdocs/dataset-example01-b1b2c3d4-e5f6-7890-abcd-000000001002#Relationship2",
+      "creationInfo": "_:creationinfo",
+      "relationshipType": "describes",
+      "from": "https://spdx.org/spdxdocs/dataset-example01-b1b2c3d4-e5f6-7890-abcd-000000001002#File2",
+      "to": [
+        "https://spdx.org/spdxdocs/dataset-example01-b1b2c3d4-e5f6-7890-abcd-000000001002#File1"
+      ],
+      "description": "codebook.csv describes data.csv."
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "https://spdx.org/spdxdocs/dataset-example01-b1b2c3d4-e5f6-7890-abcd-000000001002#Relationship3",
+      "creationInfo": "_:creationinfo",
+      "relationshipType": "hasConcludedLicense",
+      "from": "https://spdx.org/spdxdocs/dataset-example01-b1b2c3d4-e5f6-7890-abcd-000000001002#DatasetPackage1",
+      "to": [
+        "https://spdx.org/licenses/CC-BY-4.0"
+      ],
+      "description": "DatasetPackage1 has a concluded license as CC-BY-4.0."
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "https://spdx.org/spdxdocs/dataset-example01-b1b2c3d4-e5f6-7890-abcd-000000001002#Relationship4",
+      "creationInfo": "_:creationinfo",
+      "relationshipType": "hasDeclaredLicense",
+      "from": "https://spdx.org/spdxdocs/dataset-example01-b1b2c3d4-e5f6-7890-abcd-000000001002#DatasetPackage1",
+      "to": [
+        "https://spdx.org/licenses/CC-BY-4.0"
+      ],
+      "description": "DatasetPackage1 has a declared license as CC-BY-4.0."
+    },
+    {
+      "type": "simplelicensing_LicenseExpression",
+      "spdxId": "https://spdx.org/licenses/CC-BY-4.0",
+      "creationInfo": "_:creationinfo",
+      "simplelicensing_licenseExpression": "CC-BY-4.0",
+      "simplelicensing_licenseListVersion": "3.25.0"
+    }
+  ]
+}
