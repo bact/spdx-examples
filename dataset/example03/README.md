@@ -28,6 +28,8 @@ or `comment` fields; SPDX 3.1 introduces the Core `inLanguage` property
 | SPDX 3.0 | [spdx3.0/example03.spdx3.json](./spdx3.0/example03.spdx3.json) |
 | SPDX 3.1 (draft) | [spdx3.1/example03.spdx3.json](./spdx3.1/example03.spdx3.json) |
 
+
+[![A diagram of Dataset profile example 03 — Multilingual text corpus.](./example03.spdx3.png "A diagram of Dataset profile example 03 — Multilingual text corpus.")](./example03.spdx3.png)
 ## Key properties demonstrated
 
 | Property | Notes |

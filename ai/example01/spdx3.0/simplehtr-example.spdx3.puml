@@ -1,0 +1,161 @@
+@startuml SimpleHTR AI BOM
+left to right direction
+skinparam defaultFontSize 14
+skinparam defaultFontName Arial
+skinparam objectFontSize 14
+skinparam objectHeaderFontSize 15
+skinparam objectHeaderFontStyle bold
+skinparam objectBorderColor #555555
+skinparam objectBackgroundColor #FFFFF0
+skinparam ArrowColor #333333
+skinparam ArrowFontSize 12
+skinparam packageBorderColor #888888
+skinparam packageBackgroundColor #F8F8FF
+skinparam dpi 96
+
+Package "simplehtr-example.json" as doc {
+
+object "document1\nSpdxDocument" as o_doc {
+  profileConformance = [core, software, ai, dataset]
+}
+object "BOM1\nsoftware_Sbom" as o_bom {
+  software_sbomType = [analyzed]
+}
+object "<b>SimpleHTR</b>\nsoftware_Package" as o_simplehtr {
+  software_primaryPurpose = application
+}
+object "<b>word-model</b>\nai_AIPackage" as o_word {
+  software_primaryPurpose = model
+  ai_autonomyType = no
+  ai_domain = [handwriting recognition, OCR]
+  ai_typeOfModel = CNN + RNN + CTC
+  ai_safetyRiskAssessment = low
+}
+object "DictionaryEntry" as o_word_metric {
+  key = charErrorRate
+  value = 10.42%
+}
+object "<b>line-model</b>\nai_AIPackage" as o_line {
+  software_primaryPurpose = model
+  ai_autonomyType = no
+  ai_domain = [handwriting recognition, OCR]
+  ai_typeOfModel = CNN + RNN + CTC
+  ai_safetyRiskAssessment = low
+}
+object "DictionaryEntry" as o_line_metric {
+  key = charErrorRate
+  value = 3.58%
+}
+object "<b>IAMdataset</b>\ndataset_DatasetPackage" as o_iam {
+  software_primaryPurpose = data
+  dataset_datasetType = [image]
+  dataset_datasetSize = 4620000000
+  dataset_confidentialityLevel = clear
+  dataset_datasetAvailability = registration
+}
+
+package "Dependencies" as deps {
+  object "editdistance\nsoftware_Package" as o_editdist {
+    software_primaryPurpose = library
+    software_packageVersion = 0.5.2
+  }
+  object "lmdb\nsoftware_Package" as o_lmdb {
+    software_primaryPurpose = library
+    software_packageVersion = 1.0.0
+  }
+  object "matplotlib\nsoftware_Package" as o_mpl {
+    software_primaryPurpose = library
+    software_packageVersion = 3.2.1
+  }
+  object "numpy\nsoftware_Package" as o_np {
+    software_primaryPurpose = library
+    software_packageVersion = 1.19.5
+  }
+  object "opencv-python\nsoftware_Package" as o_cv {
+    software_primaryPurpose = library
+    software_packageVersion = 4.4.0.46
+  }
+  object "path\nsoftware_Package" as o_path {
+    software_primaryPurpose = library
+    software_packageVersion = 15.0.0
+  }
+  object "tensorflow\nsoftware_Package" as o_tf {
+    software_primaryPurpose = library
+    software_packageVersion = 2.4.0
+  }
+}
+
+object "MIT\nsimplelicensing_LicenseExpression" as o_mit
+object "CustomLicense-IAM\nsimplelicensing_LicenseExpression" as o_iam_lic
+
+object "Relationship3\nRelationship" as o_rel_root {
+  relationshipType = describes
+}
+object "Relationship4\nRelationship" as o_rel_dep {
+  relationshipType = dependsOn
+}
+object "Relationship5\nRelationship" as o_rel_wo_train {
+  relationshipType = trainedOn
+}
+object "Relationship6\nRelationship" as o_rel_wo_test {
+  relationshipType = testedOn
+}
+object "Relationship7\nRelationship" as o_rel_lo_train {
+  relationshipType = trainedOn
+}
+object "Relationship8\nRelationship" as o_rel_lo_test {
+  relationshipType = testedOn
+}
+object "Relationship9\nRelationship" as o_rel_contains_model {
+  relationshipType = contains
+}
+object "Relationship10\nRelationship" as o_rel_lic_app {
+  relationshipType = hasDeclaredLicense
+}
+object "Relationship11\nRelationship" as o_rel_lic_iam {
+  relationshipType = hasDeclaredLicense
+}
+
+}
+
+o_doc::rootElement --> o_bom : rootElement
+o_bom::rootElement --> o_simplehtr : rootElement
+
+o_rel_root::from <-- o_doc : from
+o_rel_root::to --> o_simplehtr : to
+
+o_rel_dep::from <-- o_simplehtr : from
+o_rel_dep::to --> o_editdist : to
+o_rel_dep::to --> o_lmdb : to
+o_rel_dep::to --> o_mpl : to
+o_rel_dep::to --> o_np : to
+o_rel_dep::to --> o_cv : to
+o_rel_dep::to --> o_path : to
+o_rel_dep::to --> o_tf : to
+
+o_rel_contains_model::from <-- o_simplehtr : from
+o_rel_contains_model::to --> o_word : to
+o_rel_contains_model::to --> o_line : to
+
+o_word::ai_metric --> o_word_metric : ai_metric
+o_line::ai_metric --> o_line_metric : ai_metric
+
+o_rel_wo_train::from <-- o_word : from
+o_rel_wo_train::to --> o_iam : to
+
+o_rel_wo_test::from <-- o_word : from
+o_rel_wo_test::to --> o_iam : to
+
+o_rel_lo_train::from <-- o_line : from
+o_rel_lo_train::to --> o_iam : to
+
+o_rel_lo_test::from <-- o_line : from
+o_rel_lo_test::to --> o_iam : to
+
+o_rel_lic_app::from <-- o_simplehtr : from
+o_rel_lic_app::to --> o_mit : to
+
+o_rel_lic_iam::from <-- o_iam : from
+o_rel_lic_iam::to --> o_iam_lic : to
+
+@enduml

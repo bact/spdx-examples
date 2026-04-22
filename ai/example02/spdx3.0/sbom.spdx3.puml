@@ -1,0 +1,187 @@
+@startuml Sentiment Demo
+left to right direction
+skinparam defaultFontSize 14
+skinparam defaultFontName Arial
+skinparam objectFontSize 14
+skinparam objectHeaderFontSize 15
+skinparam objectHeaderFontStyle bold
+skinparam objectBorderColor #555555
+skinparam objectBackgroundColor #FFFFF0
+skinparam ArrowColor #333333
+skinparam ArrowFontSize 12
+skinparam packageBorderColor #888888
+skinparam packageBackgroundColor #F8F8FF
+skinparam dpi 96
+
+Package "sbom.spdx3.json" as pkg {
+
+object "<b>Arthit Suriyawongkul</b>\nPerson" as o_person
+object "SpdxDocument1\nSpdxDocument" as o_doc
+object "Sbom1\nsoftware_Sbom" as o_bom {
+  software_sbomType = [analyzed]
+}
+object "<b>Sentiment Demo</b>\nai_AIPackage" as o_ai {
+  software_primaryPurpose = application
+  ai_autonomyType = no
+  ai_typeOfModel = [bag-of-words, logistic regression]
+  dataset_datasetSize = 11534336
+}
+object "<b>Data after preprocessing</b>\ndataset_DatasetPackage" as o_ds {
+  software_primaryPurpose = data
+  dataset_confidentialityLevel = clear
+}
+object "CC0-1.0\nsimplelicensing_LicenseExpression" as o_lic
+
+object "<b>model.bin</b>\nsoftware_File" as o_model {
+  software_primaryPurpose = model
+}
+object "<b>train.py</b>\nsoftware_File" as o_train {
+  software_primaryPurpose = source
+}
+object "<b>preprocess.py</b>\nsoftware_File" as o_prep {
+  software_primaryPurpose = source
+}
+object "<b>predict.py</b>\nsoftware_File" as o_predict {
+  software_primaryPurpose = source
+}
+object "<b>evaluate.py</b>\nsoftware_File" as o_eval {
+  software_primaryPurpose = source
+}
+object "<b>requirements.txt</b>\nsoftware_File" as o_req {
+  software_primaryPurpose = other
+}
+object "<b>README.md</b>\nsoftware_File" as o_readme {
+  software_primaryPurpose = documentation
+}
+object "<b>bom.spdx3.json</b>\nsoftware_File" as o_bom_file {
+  software_primaryPurpose = other
+}
+object "<b>data</b>\nsoftware_File" as o_data {
+  software_primaryPurpose = other
+}
+object "<b>test.txt</b>\nsoftware_File" as o_test {
+  software_primaryPurpose = test
+}
+object "<b>train.txt</b>\nsoftware_File" as o_traindata {
+  software_primaryPurpose = data
+}
+object "<b>valid.txt</b>\nsoftware_File" as o_valid {
+  software_primaryPurpose = data
+}
+object "<b>techdocs</b>\nsoftware_File" as o_techdocs {
+  software_primaryPurpose = documentation
+}
+object "<b>dataprepare.md</b>\nsoftware_File" as o_dataprepmd {
+  software_primaryPurpose = documentation
+}
+object "<b>instructions.md</b>\nsoftware_File" as o_instrmd {
+  software_primaryPurpose = documentation
+}
+object "<b>LICENSE</b>\nsoftware_File" as o_licensefile
+
+object "contains1\nRelationship" as o_rel_c1 {
+  relationshipType = contains
+}
+object "contains2\nRelationship" as o_rel_c2 {
+  relationshipType = contains
+}
+object "contains3\nRelationship" as o_rel_c3 {
+  relationshipType = contains
+}
+object "contains4\nRelationship" as o_rel_c4 {
+  relationshipType = contains
+}
+object "generates1\nLifecycleScopedRelationship" as o_rel_gen1 {
+  relationshipType = generates
+  scope = build
+}
+object "generates2\nLifecycleScopedRelationship" as o_rel_gen2 {
+  relationshipType = generates
+  scope = build
+}
+object "trainedOn1\nRelationship" as o_rel_train {
+  relationshipType = trainedOn
+}
+object "testedOn1\nRelationship" as o_rel_test {
+  relationshipType = testedOn
+}
+object "hasDataFile1\nRelationship" as o_rel_hdf {
+  relationshipType = hasDataFile
+}
+object "hasDependencyManifest1\nRelationship" as o_rel_hdm {
+  relationshipType = hasDependencyManifest
+}
+object "hasDocumentation1\nRelationship" as o_rel_hdoc {
+  relationshipType = hasDocumentation
+}
+object "hasDeclaredLicense1\nRelationship" as o_rel_lic1 {
+  relationshipType = hasDeclaredLicense
+}
+object "hasConcludedLicense1\nRelationship" as o_rel_lic2 {
+  relationshipType = hasConcludedLicense
+}
+
+}
+
+o_doc::createdBy --> o_person : createdBy
+o_doc::rootElement --> o_bom : rootElement
+o_bom::rootElement --> o_ai : rootElement
+
+o_rel_c1::from <-- o_ai : from
+o_rel_c1::to --> o_model : to
+o_rel_c1::to --> o_train : to
+o_rel_c1::to --> o_prep : to
+o_rel_c1::to --> o_predict : to
+o_rel_c1::to --> o_eval : to
+o_rel_c1::to --> o_req : to
+o_rel_c1::to --> o_readme : to
+o_rel_c1::to --> o_bom_file : to
+o_rel_c1::to --> o_data : to
+o_rel_c1::to --> o_techdocs : to
+o_rel_c1::to --> o_licensefile : to
+
+o_rel_c2::from <-- o_ds : from
+o_rel_c2::to --> o_data : to
+
+o_rel_c3::from <-- o_data : from
+o_rel_c3::to --> o_test : to
+o_rel_c3::to --> o_traindata : to
+o_rel_c3::to --> o_valid : to
+
+o_rel_c4::from <-- o_techdocs : from
+o_rel_c4::to --> o_dataprepmd : to
+o_rel_c4::to --> o_instrmd : to
+
+o_rel_gen1::from <-- o_prep : from
+o_rel_gen1::to --> o_test : to
+o_rel_gen1::to --> o_traindata : to
+o_rel_gen1::to --> o_valid : to
+
+o_rel_gen2::from <-- o_train : from
+o_rel_gen2::to --> o_model : to
+
+o_rel_train::from <-- o_model : from
+o_rel_train::to --> o_traindata : to
+o_rel_train::to --> o_valid : to
+
+o_rel_test::from <-- o_model : from
+o_rel_test::to --> o_test : to
+
+o_rel_hdf::from <-- o_prep : from
+o_rel_hdf::to --> o_model : to
+
+o_rel_hdm::from <-- o_ai : from
+o_rel_hdm::to --> o_req : to
+
+o_rel_hdoc::from <-- o_ai : from
+o_rel_hdoc::to --> o_techdocs : to
+o_rel_hdoc::to --> o_readme : to
+o_rel_hdoc::to --> o_bom_file : to
+
+o_rel_lic1::from <-- o_ai : from
+o_rel_lic1::to --> o_lic : to
+
+o_rel_lic2::from <-- o_ai : from
+o_rel_lic2::to --> o_lic : to
+
+@enduml
