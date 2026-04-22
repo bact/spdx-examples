@@ -99,8 +99,7 @@
                     "value": "0.93"
                 }
             ],
-            "ai_useSensitivePersonalInformation": "yes",
-            "comment": "SPDX 3.0 NOTE: 'ai_autonomyType' is used in SPDX 3.0 to describe autonomy level (values: yes/no/noAssertion). This property is DEPRECATED in SPDX 3.1 — use 'isoAutomationLevel' instead. For this model, the 3.0 value would be 'no' (human in the loop required)."
+            "ai_useSensitivePersonalInformation": "yes"
         },
         {
             "type": "Relationship",

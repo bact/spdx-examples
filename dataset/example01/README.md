@@ -37,16 +37,9 @@ spdxIds are shortened (by removing the UUID suffix), for brevity.
 
 [![A diagram of a bill of materials of Dataset Example 01](./spdx3.0/example01.png "A diagram of a bill of materials of Dataset Example 01")](./spdx3.0/example01.png)
 
-## SPDX 3.0 vs 3.1 note
-
-| Property | SPDX 3.0 | SPDX 3.1 |
-| ---------- | ---------- | ---------- |
-| `dataset_datasetSize` | Dataset-profile property | **deprecated** → use `software_artifactSize` |
-| `dataset_intendedUse` | Dataset-profile property | **deprecated** → use Core `intendedUse` |
-
-See [spdx3.1/example01.spdx3.json](./spdx3.1/example01.spdx3.json) for the
-updated form using `software_artifactSize: 204800` (~200 KB) and Core
-`intendedUse`.
+The SBOM uses `dataset_datasetSize` (~200 KB) and `dataset_intendedUse`, both
+of which are deprecated in SPDX 3.1 in favour of `software_artifactSize` and
+Core `intendedUse` respectively.
 
 ## SPDX files
 
