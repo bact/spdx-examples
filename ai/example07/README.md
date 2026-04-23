@@ -3,7 +3,7 @@ SPDX-FileType: DOCUMENTATION
 SPDX-License-Identifier: CC-BY-4.0
 ---
 
-# AI profile example 07 — Third-party AI supply chain
+# AI example 7 - Third-party AI supply chain
 
 ## Description
 
@@ -11,13 +11,13 @@ This example illustrates an SBOM for a consumer finance application
 ("FinApp Credit Advisor") that embeds two AI components sourced from third
 parties:
 
-1. **CreditSense API** — a proprietary credit scoring model accessed via API
+1. **CreditSense API** - a proprietary credit scoring model accessed via API
    from an external vendor. Model internals are undisclosed; `noAssertion` is
    used for unknown properties.
-2. **DocExtract ML** — an open-source document understanding model downloaded
+2. **DocExtract ML** - an open-source document understanding model downloaded
    from a public model repository and deployed in-process.
 
-The SBOM demonstrates **AI supply chain transparency** — the ability of a
+The SBOM demonstrates **AI supply chain transparency** - the ability of a
 product owner to document AI components they depend on but do not control,
 including autonomy levels, regulatory compliance claims, sensitive data
 handling, and vendor attribution.
@@ -29,20 +29,20 @@ handling, and vendor attribution.
 ## SPDX files
 
 | Version | File |
-| --------- | ------ |
+| ------- | ---- |
 | SPDX 3.0 | [spdx3.0/example07.spdx3.json](./spdx3.0/example07.spdx3.json) |
 | SPDX 3.1 (draft) | [spdx3.1/example07.spdx3.json-draft](./spdx3.1/example07.spdx3.json-draft) |
 
-[![A diagram of AI profile example 07 — Third-party AI supply chain.](./example07.spdx3.png "A diagram of AI profile example 07 — Third-party AI supply chain.")](./example07.spdx3.png)
+[![A diagram of AI profile example 07 - Third-party AI supply chain.](./example07.spdx3.png "A diagram of AI profile example 07 - Third-party AI supply chain.")](./example07.spdx3.png)
 
 ## Key properties demonstrated
 
-| Property | Notes |
-| ---------- | ------- |
-| `/AI/autonomyType` | `noAssertion` (vendor model), `no` (open-source model) — deprecated in SPDX 3.1, use `isoAutomationLevel` |
+| Property / Relationship | Notes |
+| ----------------------- | ----- |
+| `/AI/autonomyType` | `noAssertion` (vendor model), `no` (open-source model) - deprecated in SPDX 3.1, use `isoAutomationLevel` |
 | `/AI/standardCompliance` | Regulatory standards the vendor claims compliance with |
-| `/AI/useSensitivePersonalInformation` | `yes` — both AI components process personal financial data |
+| `/AI/useSensitivePersonalInformation` | `yes` - both AI components process personal financial data |
 | `dependsOn` | Application → two AI components |
 | `externalIdentifier` | Vendor API endpoint and public model repository ID |
 | `originatedBy` / `suppliedBy` | Vendor attribution for CreditSense API |
-| `/Software/downloadLocation` | `noAssertion` — vendor model not directly downloadable |
+| `/Software/downloadLocation` | `noAssertion` - vendor model not directly downloadable |

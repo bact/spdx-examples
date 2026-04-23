@@ -84,7 +84,7 @@
                     "hashValue": "c9e5d04a3ef67b82248a5c69e3f0d2e1b4c7a0f2d3e4f5a6b7c8d9e0f1a2b3c4"
                 }
             ],
-            "comment": "SPDX 3.0 NOTE: The 'dataset_sensor' property (array of DictionaryEntry) documents sensor metadata. This dataset has 8 sensor types. In SPDX 3.0, sensor information can be captured in this field. Also: 'dataset_datasetSize' (5798205850 bytes) and 'dataset_intendedUse' are DEPRECATED in SPDX 3.1 — use 'software_artifactSize' (same unit: bytes) and Core 'intendedUse' instead."
+            "comment": "SPDX 3.0 NOTE: The 'dataset_sensor' property (array of DictionaryEntry) documents sensor metadata. This dataset has 8 sensor types. In SPDX 3.0, sensor information can be captured in this field. Also: 'dataset_datasetSize' (5798205850 bytes) and 'dataset_intendedUse' are DEPRECATED in SPDX 3.1 - use 'software_artifactSize' (same unit: bytes) and Core 'intendedUse' instead."
         },
         {
             "type": "Relationship",

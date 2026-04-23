@@ -92,7 +92,7 @@
                     "hashValue": "b8e4c03f2de569a1137f4b58d2e9c2f1a3b0c5d7e9f0a1b2c3d4e5f6a7b8c9d0"
                 }
             ],
-            "comment": "SPDX 3.1 CHANGES: (1) 'dataset_datasetSize: 53687091200' (bytes, SPDX 3.0, deprecated) renamed to 'software_artifactSize: 53687091200' (~50 GB) in SPDX 3.1. (2) 'dataset_intendedUse' (SPDX 3.0, deprecated) replaced by Core-level 'intendedUse'. (3) 'inLanguage' added — new Core property in SPDX 3.1 using BCP 47 language tags (th=Thai, id=Indonesian, vi=Vietnamese, fil=Filipino, ms=Malay). In SPDX 3.0 there was no standard property for language; it could only be noted in description or comment. Compare with spdx3.0/example03.spdx3.json."
+            "comment": "SPDX 3.1 CHANGES: (1) 'dataset_datasetSize: 53687091200' (bytes, SPDX 3.0, deprecated) renamed to 'software_artifactSize: 53687091200' (~50 GB) in SPDX 3.1. (2) 'dataset_intendedUse' (SPDX 3.0, deprecated) replaced by Core-level 'intendedUse'. (3) 'inLanguage' added - new Core property in SPDX 3.1 using BCP 47 language tags (th=Thai, id=Indonesian, vi=Vietnamese, fil=Filipino, ms=Malay). In SPDX 3.0 there was no standard property for language; it could only be noted in description or comment. Compare with spdx3.0/example03.spdx3.json."
         },
         {
             "type": "Relationship",

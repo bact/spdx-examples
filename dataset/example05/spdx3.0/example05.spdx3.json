@@ -82,7 +82,7 @@
             ],
             "dataset_hasSensitivePersonalInformation": "yes",
             "dataset_intendedUse": "Development and evaluation of clinical NLP models for named entity recognition, relation extraction, and clinical text summarization. Not intended for clinical decision support without additional validation studies.",
-            "comment": "SPDX 3.0 NOTE: This example demonstrates 'dataset_hasSensitivePersonalInformation: yes' and 'dataset_confidentialityLevel: amber' (TLP AMBER — restricted to consortium members and approved requesters). The 'dataset_anonymizationMethodUsed' property documents the de-identification methodology. Also: 'dataset_datasetSize' and 'dataset_intendedUse' are DEPRECATED in SPDX 3.1."
+            "comment": "SPDX 3.0 NOTE: This example demonstrates 'dataset_hasSensitivePersonalInformation: yes' and 'dataset_confidentialityLevel: amber' (TLP AMBER - restricted to consortium members and approved requesters). The 'dataset_anonymizationMethodUsed' property documents the de-identification methodology. Also: 'dataset_datasetSize' and 'dataset_intendedUse' are DEPRECATED in SPDX 3.1."
         },
         {
             "type": "Relationship",

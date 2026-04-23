@@ -3,7 +3,7 @@ SPDX-FileType: DOCUMENTATION
 SPDX-License-Identifier: CC-BY-4.0
 ---
 
-# AI profile example 04 — Fine-tuned language model with reproducibility metadata
+# AI example 4 - Fine-tuned language model with reproducibility metadata
 
 ## Description
 
@@ -23,19 +23,19 @@ documentation alongside the model.
 ## SPDX files
 
 | Version | File |
-| --------- | ------ |
+| ------- | ---- |
 | SPDX 3.0 | [spdx3.0/example04.spdx3.json](./spdx3.0/example04.spdx3.json) |
 | SPDX 3.1 (draft) | [spdx3.1/example04.spdx3.json-draft](./spdx3.1/example04.spdx3.json-draft) |
 
-[![A diagram of AI profile example 04 — NLP model with external dependency.](./example04.spdx3.png "A diagram of AI profile example 04 — NLP model with external dependency.")](./example04.spdx3.png)
+[![A diagram of AI profile example 04 - NLP model with external dependency.](./example04.spdx3.png "A diagram of AI profile example 04 - NLP model with external dependency.")](./example04.spdx3.png)
 
 ## Key properties demonstrated
 
 | Property / Relationship | Notes |
-| ---------- | ------- |
+| ----------------------- | ----- |
 | `/AI/hyperparameter` | Training settings (learning rate, epochs, optimizer, seed, precision, …) |
 | `/AI/modelExplainability` | Methods for interpreting model output |
 | `/AI/typeOfModel` | transformer, fine-tuned, supervised |
-| `/Dataset/datasetSize` | 524288000 bytes (~500 MB) — deprecated in SPDX 3.1, use `/Software/artifactSize` |
+| `/Dataset/datasetSize` | 524288000 bytes (~500 MB) - deprecated in SPDX 3.1, use `/Software/artifactSize` |
 | `dependsOn` | Fine-tuned model → base model |
 | `trainedOn` | Model → ContractClauses-v2 dataset |

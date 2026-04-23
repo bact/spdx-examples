@@ -24,7 +24,7 @@ cd /tmp/spdx3ToGraph && \
 
 For each SPDX 3.0 JSON file `INPUT.spdx3.json`:
 
-### Step 1 — Generate raw PlantUML
+### Step 1 - Generate raw PlantUML
 ```bash
 cd /tmp/spdx3ToGraph
 CFLAGS="-I$(brew --prefix graphviz)/include" \
@@ -33,7 +33,7 @@ poetry run python -m spdx3_to_graph INPUT.spdx3.json
 # Output: INPUT.spdx3.json.puml (next to input file)
 ```
 
-### Step 2 — Simplify PlantUML
+### Step 2 - Simplify PlantUML
 ```bash
 python3 tools/simplify_puml.py INPUT.spdx3.json.puml OUTPUT.simplified.puml
 ```
@@ -48,13 +48,13 @@ The `tools/simplify_puml.py` script:
 - Truncates quoted strings to 45 chars
 - Adds `left to right direction` and skin parameters for readability
 
-### Step 3 — Render to SVG
+### Step 3 - Render to SVG
 ```bash
 plantuml -tsvg OUTPUT.simplified.puml
 # Output: OUTPUT.simplified.svg
 ```
 
-### Step 4 — Convert SVG to high-res PNG (2-step for quality)
+### Step 4 - Convert SVG to high-res PNG (2-step for quality)
 ```bash
 # SVG → PNG at 7680px wide; height follows the diagram's natural aspect ratio.
 # Do NOT specify -h: combining -w and -h without -a distorts; with -a it shrinks
@@ -62,11 +62,11 @@ plantuml -tsvg OUTPUT.simplified.puml
 rsvg-convert -w 7680 OUTPUT.simplified.svg -o EXAMPLE_DIR/exampleNN.spdx3.png
 ```
 
-> Do NOT use `plantuml -tpng` directly — the resolution will be too low.
+> Do NOT use `plantuml -tpng` directly - the resolution will be too low.
 > Always go SVG → PNG via `rsvg-convert`.
 > Do NOT add `-h`: it either distorts (without `-a`) or caps resolution for tall diagrams (with `-a`).
 > The `left to right direction` directive in the PlantUML skinparams (set by
-> `simplify_puml.py`) is the primary driver of horizontal layout — diagrams
+> `simplify_puml.py`) is the primary driver of horizontal layout - diagrams
 > flow left-to-right, producing wide canvases naturally.
 > Custom `.puml` files must also include `left to right direction`.
 
@@ -93,8 +93,8 @@ possible. DictionaryEntry objects: keep at most 1–2 per property.
 
 ## Files to commit
 
-- `*.spdx3.png` — final diagram images
-- `tools/simplify_puml.py` — simplification script
+- `*.spdx3.png` - final diagram images
+- `tools/simplify_puml.py` - simplification script
 - Custom `.puml` files (for examples written manually)
 
 Do NOT commit `.json.puml` (auto-generated), `.simplified.puml`, or `.simplified.svg`.

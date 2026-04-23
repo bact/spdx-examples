@@ -3,7 +3,7 @@ SPDX-FileType: DOCUMENTATION
 SPDX-License-Identifier: CC-BY-4.0
 ---
 
-# AI profile example 03 — Medical AI with safety classification
+# AI example 3 - Medical AI with safety classification
 
 ## Description
 
@@ -24,7 +24,7 @@ regulatory compliance, explainability, and sensitive data handling.
 | ------- | ---- |
 | SPDX 3.0 | [spdx3.0/example03.spdx3.json](./spdx3.0/example03.spdx3.json) |
 
-[![A diagram of AI profile example 03 — Medical AI with safety classification.](./example03.spdx3.png "A diagram of AI profile example 03 — Medical AI with safety classification.")](./example03.spdx3.png)
+[![A diagram of AI profile example 03 - Medical AI with safety classification.](./example03.spdx3.png "A diagram of AI profile example 03 - Medical AI with safety classification.")](./example03.spdx3.png)
 
 ## Key properties demonstrated
 
@@ -35,4 +35,4 @@ regulatory compliance, explainability, and sensitive data handling.
 | `/AI/safetyRiskAssessment` | `high` |
 | `/AI/standardCompliance` | IEC 62304, ISO 14971, EU MDR 2017/745 |
 | `/AI/typeOfModel` | convolutional neural network, supervised |
-| `/AI/useSensitivePersonalInformation` | `yes` — processes patient medical imagery |
+| `/AI/useSensitivePersonalInformation` | `yes` - processes patient medical imagery |

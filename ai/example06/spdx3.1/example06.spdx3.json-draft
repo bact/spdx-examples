@@ -161,7 +161,7 @@
             ],
             "ai_useSensitivePersonalInformation": "no",
             "isoAutomationLevel": "noAssertion",
-            "comment": "SPDX 3.1 CHANGES: (1) 'ai_autonomyType: noAssertion' (SPDX 3.0, deprecated) replaced by 'isoAutomationLevel: noAssertion' (Core property). (2) 'ai_informationAboutApplication' content partially moved to Core 'intendedUse' — 'intendedUse' is a new Core property in SPDX 3.1 available to all artifact types. Compare with SPDX 3.0 version in spdx3.0/example06.spdx3.json."
+            "comment": "SPDX 3.1 CHANGES: (1) 'ai_autonomyType: noAssertion' (SPDX 3.0, deprecated) replaced by 'isoAutomationLevel: noAssertion' (Core property). (2) 'ai_informationAboutApplication' content partially moved to Core 'intendedUse' - 'intendedUse' is a new Core property in SPDX 3.1 available to all artifact types. Compare with SPDX 3.0 version in spdx3.0/example06.spdx3.json."
         },
         {
             "type": "Relationship",

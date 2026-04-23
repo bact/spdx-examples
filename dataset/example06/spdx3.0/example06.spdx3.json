@@ -84,7 +84,7 @@
                     "hashValue": "d0f6e15b4ac78c93359b6d7ae4f1e3d2c5b8a1f3e5d7c9b1a3e5d7c9b1a3e5d7"
                 }
             ],
-            "comment": "SPDX 3.0 NOTE: This example demonstrates 'dataset_datasetType: [structured]' for GAN-generated synthetic tabular data and 'dataset_datasetNoise' to document known limitations of synthetic generation. Note: 'syntactic' in SPDX refers to data about grammatical/syntactic structure (e.g. parse trees), NOT artificially generated data — do not use 'syntactic' for synthetic datasets. Also: 'dataset_datasetSize' (314572800 bytes) and 'dataset_intendedUse' are DEPRECATED in SPDX 3.1 — use 'software_artifactSize' (same unit: bytes) and Core 'intendedUse' instead."
+            "comment": "SPDX 3.0 NOTE: This example demonstrates 'dataset_datasetType: [structured]' for GAN-generated synthetic tabular data and 'dataset_datasetNoise' to document known limitations of synthetic generation. Note: 'syntactic' in SPDX refers to data about grammatical/syntactic structure (e.g. parse trees), NOT artificially generated data - do not use 'syntactic' for synthetic datasets. Also: 'dataset_datasetSize' (314572800 bytes) and 'dataset_intendedUse' are DEPRECATED in SPDX 3.1 - use 'software_artifactSize' (same unit: bytes) and Core 'intendedUse' instead."
         },
         {
             "type": "Relationship",

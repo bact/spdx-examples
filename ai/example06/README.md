@@ -3,15 +3,15 @@ SPDX-FileType: DOCUMENTATION
 SPDX-License-Identifier: CC-BY-4.0
 ---
 
-# AI profile example 06 — Energy consumption reporting
+# AI example 6 - Energy consumption reporting
 
 ## Description
 
 This example illustrates an SBOM for a large image classification model used
 to monitor land use changes from satellite imagery.
 
-The SBOM demonstrates the **`/AI/energyConsumption` structure** — the primary
-focus of this example — covering all three lifecycle stages required by emerging
+The SBOM demonstrates the **`/AI/energyConsumption` structure** - the primary
+focus of this example - covering all three lifecycle stages required by emerging
 AI transparency and sustainability regulations.
 
 ```text
@@ -34,17 +34,17 @@ The example also uses `/AI/autonomyType` (SPDX 3.0) to record autonomy level.
 ## SPDX files
 
 | Version | File |
-| --------- | ------ |
+| ------- | ---- |
 | SPDX 3.0 | [spdx3.0/example06.spdx3.json](./spdx3.0/example06.spdx3.json) |
 | SPDX 3.1 (draft) | [spdx3.1/example06.spdx3.json-draft](./spdx3.1/example06.spdx3.json-draft) |
 
-[![A diagram of AI profile example 06 — Model with energy consumption tracking.](./example06.spdx3.png "A diagram of AI profile example 06 — Model with energy consumption tracking.")](./example06.spdx3.png)
+[![A diagram of AI profile example 06 - Model with energy consumption tracking.](./example06.spdx3.png "A diagram of AI profile example 06 - Model with energy consumption tracking.")](./example06.spdx3.png)
 
 ## Key properties demonstrated
 
 | Property | Notes |
-| ---------- | ------- |
-| `/AI/autonomyType` | `noAssertion` — deprecated in SPDX 3.1, use `isoAutomationLevel` |
+| -------- | ----- |
+| `/AI/autonomyType` | `noAssertion` - deprecated in SPDX 3.1, use `isoAutomationLevel` |
 | `/AI/energyConsumption` | All 3 stages (training, finetuning, inference) |
 | `/AI/finetuningEnergyConsumption` | 187.2 kWh |
 | `/AI/inferenceEnergyConsumption` | 0.0041 kWh per batch |

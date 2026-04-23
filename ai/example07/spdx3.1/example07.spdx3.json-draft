@@ -145,7 +145,7 @@
                     "issuingAuthority": "HuggingFace Hub"
                 }
             ],
-            "comment": "SPDX 3.1 CHANGE: 'ai_autonomyType: no' replaced by 'isoAutomationLevel: partialAutomation' — document extraction results are reviewed by loan officers before decisions are made."
+            "comment": "SPDX 3.1 CHANGE: 'ai_autonomyType: no' replaced by 'isoAutomationLevel: partialAutomation' - document extraction results are reviewed by loan officers before decisions are made."
         },
         {
             "type": "Organization",

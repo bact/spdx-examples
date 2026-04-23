@@ -189,7 +189,7 @@
                 "Underrepresentation of SME contracts and non-English law jurisdictions"
             ],
             "dataset_hasSensitivePersonalInformation": "no",
-            "comment": "SPDX 3.1 CHANGES: (1) 'dataset_datasetSize: 524288000' (bytes, SPDX 3.0, deprecated) renamed to 'software_artifactSize: 524288000' (~500 MB) in SPDX 3.1. (2) 'inLanguage: [en]' added — new Core property in SPDX 3.1. Compare with spdx3.0/example04.spdx3.json."
+            "comment": "SPDX 3.1 CHANGES: (1) 'dataset_datasetSize: 524288000' (bytes, SPDX 3.0, deprecated) renamed to 'software_artifactSize: 524288000' (~500 MB) in SPDX 3.1. (2) 'inLanguage: [en]' added - new Core property in SPDX 3.1. Compare with spdx3.0/example04.spdx3.json."
         },
         {
             "type": "software_Package",

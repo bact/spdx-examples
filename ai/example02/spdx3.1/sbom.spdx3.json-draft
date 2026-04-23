@@ -434,7 +434,7 @@
             "spdxId": "https://spdx.org/spdxdocs/SpdxDocument1-d1edd8cb-935e-46f2-bd5b-43f5f554a097#AIPackage1",
             "summary": "A sentiment analysis application, published to demonstrate a software bill of materials.",
             "type": "ai_AIPackage",
-            "comment": "SPDX 3.1 CHANGE: 'ai_autonomyType: yes' (SPDX 3.0, PresenceType, deprecated) replaced by 'isoAutomationLevel: conditionalAutomation' — the model makes autonomous predictions when invoked, though the demo application context is non-critical. Compare with spdx3.0/sbom.spdx3.json."
+            "comment": "SPDX 3.1 CHANGE: 'ai_autonomyType: yes' (SPDX 3.0, PresenceType, deprecated) replaced by 'isoAutomationLevel: conditionalAutomation' - the model makes autonomous predictions when invoked, though the demo application context is non-critical. Compare with spdx3.0/sbom.spdx3.json."
         },
         {
             "comment": "In SPDX 3.1, ListedLicense instances from the SPDX License List are expected to be available directly. This workaround element may be removed once https://github.com/spdx/LicenseListPublisher/issues/183 is implemented.",

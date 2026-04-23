@@ -160,7 +160,7 @@
             ],
             "ai_useSensitivePersonalInformation": "no",
             "ai_autonomyType": "noAssertion",
-            "comment": "SPDX 3.0 NOTE: This example demonstrates the 'ai_energyConsumption' structure covering all three lifecycle stages: training (4,823.5 kWh), fine-tuning (187.2 kWh), and inference per batch (0.0041 kWh). Energy transparency is increasingly required under AI governance frameworks such as the EU AI Act and ISO/IEC 42001. Also: 'ai_autonomyType' is DEPRECATED in SPDX 3.1 — use 'isoAutomationLevel' instead."
+            "comment": "SPDX 3.0 NOTE: This example demonstrates the 'ai_energyConsumption' structure covering all three lifecycle stages: training (4,823.5 kWh), fine-tuning (187.2 kWh), and inference per batch (0.0041 kWh). Energy transparency is increasingly required under AI governance frameworks such as the EU AI Act and ISO/IEC 42001. Also: 'ai_autonomyType' is DEPRECATED in SPDX 3.1 - use 'isoAutomationLevel' instead."
         },
         {
             "type": "Relationship",

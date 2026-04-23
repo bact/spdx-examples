@@ -3,7 +3,7 @@ SPDX-FileType: DOCUMENTATION
 SPDX-License-Identifier: CC-BY-4.0
 ---
 
-# Example 02
+# AI example 2 - Sentiment analysis
 
 ## Description
 
@@ -13,14 +13,14 @@ application that employs machine learning to perform a text sentiment analysis.
 The SBOM ([spdx3.0/sbom.spdx3.json](./spdx3.0/sbom.spdx3.json)) demonstrates
 the structure between `AIPackage`, `DatasetPackage`, and their technical
 documentation through lifecycle-scoped relationship types, and captures
-autonomy level and dataset size — two properties that migrate in SPDX 3.1:
+autonomy level and dataset size - two properties that migrate in SPDX 3.1:
 `/AI/autonomyType` is replaced by `isoAutomationLevel: conditionalAutomation`,
 and `/Dataset/datasetSize` is replaced by `/Software/artifactSize`.
 
 ## SPDX files
 
 | Version | File |
-| --------- | ------ |
+| ------- | ---- |
 | SPDX 3.0 | [spdx3.0/sbom.spdx3.json](./spdx3.0/sbom.spdx3.json) |
 | SPDX 3.1 (draft) | [spdx3.1/sbom.spdx3.json-draft](./spdx3.1/sbom.spdx3.json-draft) |
 

@@ -3,7 +3,7 @@ SPDX-FileType: DOCUMENTATION
 SPDX-License-Identifier: CC-BY-4.0
 ---
 
-# Example 01
+# Dataset example 1 - Gas emissions dataset
 
 ## Description
 
@@ -36,8 +36,8 @@ of which are deprecated in SPDX 3.1 in favour of `/Software/artifactSize` and `/
 ## SPDX files
 
 | Version | File |
-| --------- | ------ |
+| ------- | ---- |
 | SPDX 3.0 | [spdx3.0/example01.spdx3.json](./spdx3.0/example01.spdx3.json) |
 | SPDX 3.1 (draft) | [spdx3.1/example01.spdx3.json-draft](./spdx3.1/example01.spdx3.json-draft) |
 
-[![A diagram of Dataset profile example 01 — Simple tabular dataset.](./example01.spdx3.png "A diagram of Dataset profile example 01 — Simple tabular dataset.")](./example01.spdx3.png)
+[![A diagram of Dataset profile example 01 - Simple tabular dataset.](./example01.spdx3.png "A diagram of Dataset profile example 01 - Simple tabular dataset.")](./example01.spdx3.png)

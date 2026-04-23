@@ -85,7 +85,7 @@
                     "hashValue": "b8e4c03f2de569a1137f4b58d2e9c2f1a3b0c5d7e9f0a1b2c3d4e5f6a7b8c9d0"
                 }
             ],
-            "comment": "SPDX 3.0 NOTE: 'dataset_intendedUse' is DEPRECATED in SPDX 3.1 — use the Core-level 'intendedUse' property instead. Also, 'dataset_datasetSize' (value: 53687091200 bytes) is DEPRECATED in SPDX 3.1 — use 'software_artifactSize' instead (same unit: bytes). In SPDX 3.1, language information can be added via Core 'inLanguage' property."
+            "comment": "SPDX 3.0 NOTE: 'dataset_intendedUse' is DEPRECATED in SPDX 3.1 - use the Core-level 'intendedUse' property instead. Also, 'dataset_datasetSize' (value: 53687091200 bytes) is DEPRECATED in SPDX 3.1 - use 'software_artifactSize' instead (same unit: bytes). In SPDX 3.1, language information can be added via Core 'inLanguage' property."
         },
         {
             "type": "Relationship",

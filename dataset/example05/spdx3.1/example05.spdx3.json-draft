@@ -85,7 +85,7 @@
                 "Notes authored by residents may have different linguistic patterns than attending-authored notes"
             ],
             "dataset_hasSensitivePersonalInformation": "yes",
-            "comment": "SPDX 3.1 CHANGES: (1) 'dataset_datasetSize: 2684354560' (bytes, SPDX 3.0, deprecated) renamed to 'software_artifactSize: 2684354560' (~2.5 GB) in SPDX 3.1. (2) 'dataset_intendedUse' (SPDX 3.0, deprecated) replaced by Core-level 'intendedUse'. (3) 'inLanguage: [en]' added — new Core property in SPDX 3.1. Compare with spdx3.0/example05.spdx3.json."
+            "comment": "SPDX 3.1 CHANGES: (1) 'dataset_datasetSize: 2684354560' (bytes, SPDX 3.0, deprecated) renamed to 'software_artifactSize: 2684354560' (~2.5 GB) in SPDX 3.1. (2) 'dataset_intendedUse' (SPDX 3.0, deprecated) replaced by Core-level 'intendedUse'. (3) 'inLanguage: [en]' added - new Core property in SPDX 3.1. Compare with spdx3.0/example05.spdx3.json."
         },
         {
             "type": "Relationship",
