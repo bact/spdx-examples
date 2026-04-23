@@ -5,6 +5,7 @@ Generate a graphical diagram (SVG + 8K PNG) from an SPDX 3.0 JSON file.
 ## Prerequisites
 
 Install once:
+
 ```bash
 brew install plantuml librsvg
 
@@ -25,6 +26,7 @@ cd /tmp/spdx3ToGraph && \
 For each SPDX 3.0 JSON file `INPUT.spdx3.json`:
 
 ### Step 1 - Generate raw PlantUML
+
 ```bash
 cd /tmp/spdx3ToGraph
 CFLAGS="-I$(brew --prefix graphviz)/include" \
@@ -34,11 +36,13 @@ poetry run python -m spdx3_to_graph INPUT.spdx3.json
 ```
 
 ### Step 2 - Simplify PlantUML
+
 ```bash
 python3 tools/simplify_puml.py INPUT.spdx3.json.puml OUTPUT.simplified.puml
 ```
 
 The `tools/simplify_puml.py` script:
+
 - Removes `CreationInfo` and `Hash` objects (visual clutter)
 - Limits `DictionaryEntry` objects to **1 per source+property** (keep just one metric/hyperparameter to illustrate the pattern)
 - Drops verbose text properties (`description`, `summary`, `/AI/informationAboutApplication`, `/AI/limitation`, etc.)
@@ -49,12 +53,14 @@ The `tools/simplify_puml.py` script:
 - Adds `left to right direction` and skin parameters for readability
 
 ### Step 3 - Render to SVG
+
 ```bash
 plantuml -tsvg OUTPUT.simplified.puml
 # Output: OUTPUT.simplified.svg
 ```
 
 ### Step 4 - Convert SVG to high-res PNG (2-step for quality)
+
 ```bash
 # SVG → PNG at 7680px wide; height follows the diagram's natural aspect ratio.
 # Do NOT specify -h: combining -w and -h without -a distorts; with -a it shrinks
@@ -85,7 +91,7 @@ possible. DictionaryEntry objects: keep at most 1–2 per property.
 ## Output locations
 
 | Example | PNG path |
-|---------|----------|
+| ------- | -------- |
 | `ai/example01` | `ai/example01/example01.spdx3.png` |
 | `ai/example02` | `ai/example02/example02.spdx3.png` |
 | `ai/exampleNN` | `ai/exampleNN/exampleNN.spdx3.png` |

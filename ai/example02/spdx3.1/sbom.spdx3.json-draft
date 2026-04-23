@@ -28,7 +28,7 @@
                     "type": "ExternalIdentifier"
                 },
                 {
-                    "externalIdentifierType": "other",
+                    "externalIdentifierType": "orcidid",
                     "identifier": "0000-0002-9698-1899",
                     "identifierLocator": [
                         "https://orcid.org/0000-0002-9698-1899"
