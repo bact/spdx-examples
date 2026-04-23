@@ -27,7 +27,7 @@ documentation alongside the model.
 | SPDX 3.0 | [spdx3.0/example04.spdx3.json](./spdx3.0/example04.spdx3.json) |
 | SPDX 3.1 (draft) | [spdx3.1/example04.spdx3.json-draft](./spdx3.1/example04.spdx3.json-draft) |
 
-[![A diagram of AI profile example 04 - NLP model with external dependency.](./example04.spdx3.png "A diagram of AI profile example 04 - NLP model with external dependency.")](./example04.spdx3.png)
+[![A diagram of AI example 4 - NLP model with external dependency.](./example04.spdx3.png "A diagram of AI example 4 - NLP model with external dependency.")](./example04.spdx3.png)
 
 ## Key properties demonstrated
 

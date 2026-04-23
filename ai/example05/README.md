@@ -26,7 +26,7 @@ documentation.
 | SPDX 3.0 | [spdx3.0/example05.spdx3.json](./spdx3.0/example05.spdx3.json) |
 | SPDX 3.1 (draft) | [spdx3.1/example05.spdx3.json-draft](./spdx3.1/example05.spdx3.json-draft) |
 
-[![A diagram of AI profile example 05 - Object detection model with performance metrics.](./example05.spdx3.png "A diagram of AI profile example 05 - Object detection model with performance metrics.")](./example05.spdx3.png)
+[![A diagram of AI example 5 - Object detection model with performance metrics.](./example05.spdx3.png "A diagram of AI example 5 - Object detection model with performance metrics.")](./example05.spdx3.png)
 
 ## Key properties demonstrated
 

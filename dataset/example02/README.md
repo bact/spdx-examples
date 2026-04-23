@@ -24,7 +24,7 @@ including data collection, preprocessing, known bias, and privacy sensitivity.
 | SPDX 3.0 | [spdx3.0/example02.spdx3.json](./spdx3.0/example02.spdx3.json) |
 | SPDX 3.1 (draft) | [spdx3.1/example02.spdx3.json-draft](./spdx3.1/example02.spdx3.json-draft) |
 
-[![A diagram of Dataset profile example 02 - Image dataset.](./example02.spdx3.png "A diagram of Dataset profile example 02 - Image dataset.")](./example02.spdx3.png)
+[![A diagram of Dataset example 2 - Image dataset.](./example02.spdx3.png "A diagram of Dataset example 2 - Image dataset.")](./example02.spdx3.png)
 
 ## Key properties demonstrated
 

@@ -38,7 +38,7 @@ The example also uses `/AI/autonomyType` (SPDX 3.0) to record autonomy level.
 | SPDX 3.0 | [spdx3.0/example06.spdx3.json](./spdx3.0/example06.spdx3.json) |
 | SPDX 3.1 (draft) | [spdx3.1/example06.spdx3.json-draft](./spdx3.1/example06.spdx3.json-draft) |
 
-[![A diagram of AI profile example 06 - Model with energy consumption tracking.](./example06.spdx3.png "A diagram of AI profile example 06 - Model with energy consumption tracking.")](./example06.spdx3.png)
+[![A diagram of AI example 6 - Model with energy consumption tracking.](./example06.spdx3.png "A diagram of AI example 6 - Model with energy consumption tracking.")](./example06.spdx3.png)
 
 ## Key properties demonstrated
 
