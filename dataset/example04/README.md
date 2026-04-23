@@ -31,7 +31,7 @@ multiple dataset types, update mechanism, known bias, and access controls.
 ## Key properties demonstrated
 
 | Property | Notes |
-| ---------- | ------- |
+| -------- | ----- |
 | `/Dataset/confidentialityLevel` | `green` - data may be shared within a defined partner community |
 | `/Dataset/dataCollectionProcess` | How sensor readings were recorded and labeled |
 | `/Dataset/datasetSize` | `5798205850` bytes (~5.4 GB) - deprecated in SPDX 3.1, use `/Software/artifactSize` |
