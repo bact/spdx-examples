@@ -37,9 +37,8 @@ spdxIds are shortened (by removing the UUID suffix), for brevity.
 
 [![A diagram of a bill of materials of Dataset Example 01](./spdx3.0/example01.png "A diagram of a bill of materials of Dataset Example 01")](./spdx3.0/example01.png)
 
-The SBOM uses `dataset_datasetSize` (~200 KB) and `dataset_intendedUse`, both
-of which are deprecated in SPDX 3.1 in favour of `software_artifactSize` and
-Core `intendedUse` respectively.
+The SBOM uses `/Dataset/datasetSize` (~200 KB) and `/Dataset/intendedUse`, both
+of which are deprecated in SPDX 3.1 in favour of `/Software/artifactSize` and `/Core/intendedUse` respectively.
 
 ## SPDX files
 

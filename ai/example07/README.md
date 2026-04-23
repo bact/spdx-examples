@@ -39,10 +39,10 @@ handling, and vendor attribution.
 
 | Property | Notes |
 | ---------- | ------- |
-| `ai_autonomyType` | `noAssertion` (vendor model), `no` (open-source model) — deprecated in SPDX 3.1, use `isoAutomationLevel` |
-| `ai_standardCompliance` | Regulatory standards the vendor claims compliance with |
-| `ai_useSensitivePersonalInformation` | `yes` — both AI components process personal financial data |
+| `/AI/autonomyType` | `noAssertion` (vendor model), `no` (open-source model) — deprecated in SPDX 3.1, use `isoAutomationLevel` |
+| `/AI/standardCompliance` | Regulatory standards the vendor claims compliance with |
+| `/AI/useSensitivePersonalInformation` | `yes` — both AI components process personal financial data |
 | `dependsOn` | Application → two AI components |
 | `externalIdentifier` | Vendor API endpoint and public model repository ID |
 | `originatedBy` / `suppliedBy` | Vendor attribution for CreditSense API |
-| `software_downloadLocation` | `noAssertion` — vendor model not directly downloadable |
+| `/Software/downloadLocation` | `noAssertion` — vendor model not directly downloadable |

@@ -32,9 +32,9 @@ documentation.
 
 | Property | Notes |
 | ---------- | ------- |
-| `ai_autonomyType` | `no` (humans make final decisions) — deprecated in SPDX 3.1, use `isoAutomationLevel: partialAutomation` |
-| `ai_metric` | Accuracy, detection quality, and latency scores |
-| `ai_metricDecisionThreshold` | Confidence and overlap thresholds for triggering detections |
-| `dataset_confidentialityLevel` | `amber` |
-| `dataset_datasetSize` | Training dataset size — deprecated in SPDX 3.1, use `software_artifactSize` |
-| `dataset_hasSensitivePersonalInformation` | `yes` — training images contain people |
+| `/AI/autonomyType` | `no` (humans make final decisions) — deprecated in SPDX 3.1, use `isoAutomationLevel: partialAutomation` |
+| `/AI/metric` | Accuracy, detection quality, and latency scores |
+| `/AI/metricDecisionThreshold` | Confidence and overlap thresholds for triggering detections |
+| `/Dataset/confidentialityLevel` | `amber` |
+| `/Dataset/datasetSize` | Training dataset size — deprecated in SPDX 3.1, use `/Software/artifactSize` |
+| `/Dataset/hasSensitivePersonalInformation` | `yes` — training images contain people |

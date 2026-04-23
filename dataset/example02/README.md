@@ -30,11 +30,11 @@ including data collection, preprocessing, known bias, and privacy sensitivity.
 
 | Property | Notes |
 | ---------- | ------- |
-| `dataset_confidentialityLevel` | `clear` — freely distributable (with license) |
-| `dataset_dataCollectionProcess` | How the images were sourced |
-| `dataset_dataPreprocessing` | Steps applied to prepare images before use |
-| `dataset_datasetSize` | `21474836480` bytes (~20 GB) — deprecated in SPDX 3.1, use `software_artifactSize` |
-| `dataset_datasetType` | `image` |
-| `dataset_hasSensitivePersonalInformation` | `yes` — dataset contains images of people |
-| `dataset_intendedUse` | Training/evaluation use cases — deprecated in SPDX 3.1, use Core `intendedUse` |
-| `dataset_knownBias` | Demographic imbalances documented |
+| `/Dataset/confidentialityLevel` | `clear` — freely distributable (with license) |
+| `/Dataset/dataCollectionProcess` | How the images were sourced |
+| `/Dataset/dataPreprocessing` | Steps applied to prepare images before use |
+| `/Dataset/datasetSize` | `21474836480` bytes (~20 GB) — deprecated in SPDX 3.1, use `/Software/artifactSize` |
+| `/Dataset/datasetType` | `image` |
+| `/Dataset/hasSensitivePersonalInformation` | `yes` — dataset contains images of people |
+| `/Dataset/intendedUse` | Training/evaluation use cases — deprecated in SPDX 3.1, use `/Core/intendedUse` |
+| `/Dataset/knownBias` | Demographic imbalances documented |

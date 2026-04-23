@@ -32,10 +32,10 @@ noise characteristics, dataset type, and access controls.
 
 | Property | Notes |
 | ---------- | ------- |
-| `dataset_confidentialityLevel` | `clear` — freely distributable (CC0-1.0) |
-| `dataset_dataCollectionProcess` | Generation methodology documented (not collection) |
-| `dataset_datasetNoise` | Known limitations of synthetic generation |
-| `dataset_datasetSize` | `314572800` bytes (~300 MB) — deprecated in SPDX 3.1, use `software_artifactSize` |
-| `dataset_datasetType` | `structured` (tabular) |
-| `dataset_hasSensitivePersonalInformation` | `no` — synthetic data contains no real customer records |
-| `dataset_intendedUse` | Research only, not production deployment — deprecated in SPDX 3.1, use Core `intendedUse` |
+| `/Dataset/confidentialityLevel` | `clear` — freely distributable (CC0-1.0) |
+| `/Dataset/dataCollectionProcess` | Generation methodology documented (not collection) |
+| `/Dataset/datasetNoise` | Known limitations of synthetic generation |
+| `/Dataset/datasetSize` | `314572800` bytes (~300 MB) — deprecated in SPDX 3.1, use `/Software/artifactSize` |
+| `/Dataset/datasetType` | `structured` (tabular) |
+| `/Dataset/hasSensitivePersonalInformation` | `no` — synthetic data contains no real customer records |
+| `/Dataset/intendedUse` | Research only, not production deployment — deprecated in SPDX 3.1, use `/Core/intendedUse` |

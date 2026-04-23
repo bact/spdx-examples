@@ -14,8 +14,8 @@ The SBOM ([spdx3.0/sbom.spdx3.json](./spdx3.0/sbom.spdx3.json)) demonstrates
 the structure between `AIPackage`, `DatasetPackage`, and their technical
 documentation through lifecycle-scoped relationship types, and captures
 autonomy level and dataset size — two properties that migrate in SPDX 3.1:
-`ai_autonomyType` is replaced by `isoAutomationLevel: conditionalAutomation`,
-and `dataset_datasetSize` is replaced by `software_artifactSize`.
+`/AI/autonomyType` is replaced by `isoAutomationLevel: conditionalAutomation`,
+and `/Dataset/datasetSize` is replaced by `/Software/artifactSize`.
 
 ## SPDX files
 

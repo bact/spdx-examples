@@ -10,7 +10,7 @@ SPDX-License-Identifier: CC-BY-4.0
 This example illustrates an SBOM for a large image classification model used
 to monitor land use changes from satellite imagery.
 
-The SBOM demonstrates the **`ai_energyConsumption` structure** — the primary
+The SBOM demonstrates the **`/AI/energyConsumption` structure** — the primary
 focus of this example — covering all three lifecycle stages required by emerging
 AI transparency and sustainability regulations.
 
@@ -21,11 +21,11 @@ ai_energyConsumption
 └── ai_inferenceEnergyConsumption   →  0.0041 kWh  (per batch job)
 ```
 
-Each stage uses an `ai_EnergyConsumptionDescription` object with
-`ai_energyQuantity` (decimal) and `ai_energyUnit`
+Each stage uses an `/AI/EnergyConsumptionDescription` object with
+`/AI/energyQuantity` (decimal) and `/AI/energyUnit`
 (`kilowattHour` / `megajoule` / `other`).
 
-The example also uses `ai_autonomyType` (SPDX 3.0) to record autonomy level.
+The example also uses `/AI/autonomyType` (SPDX 3.0) to record autonomy level.
 
 ## Profile conformance
 
@@ -44,9 +44,9 @@ The example also uses `ai_autonomyType` (SPDX 3.0) to record autonomy level.
 
 | Property | Notes |
 | ---------- | ------- |
-| `ai_autonomyType` | `noAssertion` — deprecated in SPDX 3.1, use `isoAutomationLevel` |
-| `ai_energyConsumption` | All 3 stages (training, finetuning, inference) |
-| `ai_finetuningEnergyConsumption` | 187.2 kWh |
-| `ai_inferenceEnergyConsumption` | 0.0041 kWh per batch |
-| `ai_standardCompliance` | ISO/IEC 42001:2023 |
-| `ai_trainingEnergyConsumption` | 4,823.5 kWh |
+| `/AI/autonomyType` | `noAssertion` — deprecated in SPDX 3.1, use `isoAutomationLevel` |
+| `/AI/energyConsumption` | All 3 stages (training, finetuning, inference) |
+| `/AI/finetuningEnergyConsumption` | 187.2 kWh |
+| `/AI/inferenceEnergyConsumption` | 0.0041 kWh per batch |
+| `/AI/standardCompliance` | ISO/IEC 42001:2023 |
+| `/AI/trainingEnergyConsumption` | 4,823.5 kWh |

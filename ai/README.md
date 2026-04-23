@@ -22,12 +22,12 @@ Directories of the form `example##` are structured as follows:
 | # | Sources | Binaries | Data | SPDX 3.0 | SPDX 3.1 | Focus |
 | - | ------- | -------- | ---- | -------- | -------- | ----- |
 | [01](./example01/) | - | - | - | 1 document | - | `dependsOn`, `testedOn`, `trainedOn` relationships |
-| [02](./example02/) | 4 Python files | 1 model file | 3 data files | 1 document | 1 document | `generates`, `hasDataFile`, `hasDocumentation`; `ai_energyConsumption`, `ai_hyperparameter`; **3.0→3.1**: `ai_autonomyType` → `isoAutomationLevel` |
-| [03](./example03/) | - | - | - | 1 document | - | `ai_safetyRiskAssessment`, `ai_standardCompliance`, `ai_limitation` (medical AI) |
-| [04](./example04/) | - | - | - | 1 document | 1 document | `ai_hyperparameter`, `ai_modelExplainability`, `trainedOn`, `dependsOn` base model; **3.0→3.1**: `dataset_datasetSize` → `software_artifactSize` |
-| [05](./example05/) | - | - | - | 1 document | 1 document | `ai_metric`, `ai_metricDecisionThreshold`; **3.0→3.1**: `ai_autonomyType` → `isoAutomationLevel` |
-| [06](./example06/) | - | - | - | 1 document | 1 document | `ai_energyConsumption` (training + finetuning + inference); **3.0→3.1**: `ai_autonomyType` → `isoAutomationLevel` |
-| [07](./example07/) | - | - | - | 1 document | 1 document | Third-party AI supply chain, `noAssertion` for opaque vendor model; **3.0→3.1**: `ai_autonomyType` → `isoAutomationLevel` |
+| [02](./example02/) | 4 Python files | 1 model file | 3 data files | 1 document | 1 document | `generates`, `hasDataFile`, `hasDocumentation`; `/AI/energyConsumption`, `/AI/hyperparameter`; **3.0→3.1**: `/AI/autonomyType` → `isoAutomationLevel` |
+| [03](./example03/) | - | - | - | 1 document | - | `/AI/safetyRiskAssessment`, `/AI/standardCompliance`, `/AI/limitation` (medical AI) |
+| [04](./example04/) | - | - | - | 1 document | 1 document | `/AI/hyperparameter`, `/AI/modelExplainability`, `trainedOn`, `dependsOn` base model; **3.0→3.1**: `/Dataset/datasetSize` → `/Software/artifactSize` |
+| [05](./example05/) | - | - | - | 1 document | 1 document | `/AI/metric`, `/AI/metricDecisionThreshold`; **3.0→3.1**: `/AI/autonomyType` → `isoAutomationLevel` |
+| [06](./example06/) | - | - | - | 1 document | 1 document | `/AI/energyConsumption` (training + finetuning + inference); **3.0→3.1**: `/AI/autonomyType` → `isoAutomationLevel` |
+| [07](./example07/) | - | - | - | 1 document | 1 document | Third-party AI supply chain, `noAssertion` for opaque vendor model; **3.0→3.1**: `/AI/autonomyType` → `isoAutomationLevel` |
 
 ## Implementing SBOM for AI systems
 

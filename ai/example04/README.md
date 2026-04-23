@@ -33,9 +33,9 @@ documentation alongside the model.
 
 | Property / Relationship | Notes |
 | ---------- | ------- |
-| `ai_hyperparameter` | Training settings (learning rate, epochs, optimizer, seed, precision, …) |
-| `ai_modelExplainability` | Methods for interpreting model output |
-| `ai_typeOfModel` | transformer, fine-tuned, supervised |
-| `dataset_datasetSize` | 524288000 bytes (~500 MB) — deprecated in SPDX 3.1, use `software_artifactSize` |
+| `/AI/hyperparameter` | Training settings (learning rate, epochs, optimizer, seed, precision, …) |
+| `/AI/modelExplainability` | Methods for interpreting model output |
+| `/AI/typeOfModel` | transformer, fine-tuned, supervised |
+| `/Dataset/datasetSize` | 524288000 bytes (~500 MB) — deprecated in SPDX 3.1, use `/Software/artifactSize` |
 | `dependsOn` | Fine-tuned model → base model |
 | `trainedOn` | Model → ContractClauses-v2 dataset |

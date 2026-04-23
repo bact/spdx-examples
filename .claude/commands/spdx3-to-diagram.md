@@ -41,7 +41,7 @@ python3 tools/simplify_puml.py INPUT.spdx3.json.puml OUTPUT.simplified.puml
 The `tools/simplify_puml.py` script:
 - Removes `CreationInfo` and `Hash` objects (visual clutter)
 - Limits `DictionaryEntry` objects to **1 per source+property** (keep just one metric/hyperparameter to illustrate the pattern)
-- Drops verbose text properties (`description`, `summary`, `ai_informationAboutApplication`, `ai_limitation`, etc.)
+- Drops verbose text properties (`description`, `summary`, `/AI/informationAboutApplication`, `/AI/limitation`, etc.)
 - Strips full SPDX RDF vocabulary URLs (e.g. `https://spdx.org/rdf/3.0.1/terms/Core/RelationshipType/` → empty, leaving just `contains`)
 - Strips spdxdocs namespace prefix from element IDs
 - Removes UUID suffixes from IDs
@@ -72,7 +72,7 @@ rsvg-convert -w 7680 OUTPUT.simplified.svg -o EXAMPLE_DIR/exampleNN.spdx3.png
 
 ## For complex examples (many files or elements)
 
-When an example has >30 elements or many `software_File` objects that make the
+When an example has >30 elements or many `/Software/File` objects that make the
 auto-generated layout unreadable, write a **custom PlantUML** file manually:
 
 - Reference: `ai/example01/spdx3.0/simplehtr-example.spdx3.puml`

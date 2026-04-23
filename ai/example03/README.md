@@ -30,9 +30,9 @@ regulatory compliance, explainability, and sensitive data handling.
 
 | Property | Notes |
 | -------- | ----- |
-| `ai_limitation` | Out-of-scope equipment, pediatric patients |
-| `ai_modelExplainability` | Methods for interpreting model decisions |
-| `ai_safetyRiskAssessment` | `high` |
-| `ai_standardCompliance` | IEC 62304, ISO 14971, EU MDR 2017/745 |
-| `ai_typeOfModel` | convolutional neural network, supervised |
-| `ai_useSensitivePersonalInformation` | `yes` — processes patient medical imagery |
+| `/AI/limitation` | Out-of-scope equipment, pediatric patients |
+| `/AI/modelExplainability` | Methods for interpreting model decisions |
+| `/AI/safetyRiskAssessment` | `high` |
+| `/AI/standardCompliance` | IEC 62304, ISO 14971, EU MDR 2017/745 |
+| `/AI/typeOfModel` | convolutional neural network, supervised |
+| `/AI/useSensitivePersonalInformation` | `yes` — processes patient medical imagery |

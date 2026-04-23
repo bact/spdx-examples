@@ -31,11 +31,11 @@ methods, access controls, availability mode, and research use restrictions.
 
 | Property | Notes |
 | ---------- | ------- |
-| `dataset_anonymizationMethodUsed` | Multi-step process to remove identifying information |
-| `dataset_confidentialityLevel` | `amber` — access restricted to approved research organizations under data use agreements |
-| `dataset_datasetAvailability` | `query` — accessible only via a controlled interface, not direct download |
-| `dataset_datasetSize` | `2684354560` bytes (~2.5 GB) — deprecated in SPDX 3.1, use `software_artifactSize` |
-| `dataset_hasSensitivePersonalInformation` | `yes` — originates from patient health records |
-| `dataset_intendedUse` | Research use only — deprecated in SPDX 3.1, use Core `intendedUse` |
-| `dataset_knownBias` | Single-institution patient population documented |
-| `inLanguage` | `"en"` — new in SPDX 3.1, records the language(s) of a dataset |
+| `/Dataset/anonymizationMethodUsed` | Multi-step process to remove identifying information |
+| `/Dataset/confidentialityLevel` | `amber` — access restricted to approved research organizations under data use agreements |
+| `/Dataset/datasetAvailability` | `query` — accessible only via a controlled interface, not direct download |
+| `/Dataset/datasetSize` | `2684354560` bytes (~2.5 GB) — deprecated in SPDX 3.1, use `/Software/artifactSize` |
+| `/Dataset/hasSensitivePersonalInformation` | `yes` — originates from patient health records |
+| `/Dataset/intendedUse` | Research use only — deprecated in SPDX 3.1, use `/Core/intendedUse` |
+| `/Dataset/knownBias` | Single-institution patient population documented |
+| `/Core/inLanguage` | `"en"` — new in SPDX 3.1, records the language(s) of a dataset |

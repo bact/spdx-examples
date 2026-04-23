@@ -32,11 +32,11 @@ multiple dataset types, update mechanism, known bias, and access controls.
 
 | Property | Notes |
 | ---------- | ------- |
-| `dataset_confidentialityLevel` | `green` — data may be shared within a defined partner community |
-| `dataset_dataCollectionProcess` | How sensor readings were recorded and labeled |
-| `dataset_datasetSize` | `5798205850` bytes (~5.4 GB) — deprecated in SPDX 3.1, use `software_artifactSize` |
-| `dataset_datasetType` | `sensor`, `timestamp` — multiple types combined; `sensor` = physical readings, `timestamp` = time-indexed records |
-| `dataset_datasetUpdateMechanism` | Quarterly appended snapshots |
-| `dataset_hasSensitivePersonalInformation` | `no` |
-| `dataset_intendedUse` | Research use cases — deprecated in SPDX 3.1, use Core `intendedUse` |
-| `dataset_knownBias` | Gaps in equipment and failure type coverage documented |
+| `/Dataset/confidentialityLevel` | `green` — data may be shared within a defined partner community |
+| `/Dataset/dataCollectionProcess` | How sensor readings were recorded and labeled |
+| `/Dataset/datasetSize` | `5798205850` bytes (~5.4 GB) — deprecated in SPDX 3.1, use `/Software/artifactSize` |
+| `/Dataset/datasetType` | `sensor`, `timestamp` — multiple types combined; `sensor` = physical readings, `timestamp` = time-indexed records |
+| `/Dataset/datasetUpdateMechanism` | Quarterly appended snapshots |
+| `/Dataset/hasSensitivePersonalInformation` | `no` |
+| `/Dataset/intendedUse` | Research use cases — deprecated in SPDX 3.1, use `/Core/intendedUse` |
+| `/Dataset/knownBias` | Gaps in equipment and failure type coverage documented |
