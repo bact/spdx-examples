@@ -4,7 +4,7 @@
         {
             "type": "CreationInfo",
             "@id": "_:creationinfo",
-            "specVersion": "3.1.0",
+            "specVersion": "3.1",
             "createdBy": [
                 "https://spdx.org/spdxdocs/ai-example06-a1b2c3d4-e5f6-7890-abcd-000000006002#Organization1"
             ],

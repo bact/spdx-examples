@@ -10,10 +10,9 @@ SPDX-License-Identifier: CC-BY-4.0
 This example illustrates an SBOM for a dataset of de-identified medical notes
 from a hospital, used for text analysis research.
 
-The SBOM ([spdx3.0/example05.spdx3.json](./spdx3.0/example05.spdx3.json))
-demonstrates Dataset-profile properties for **datasets containing sensitive
-personal information**, covering anonymization methods, access controls,
-availability mode, and research use restrictions.
+The SBOM demonstrates Dataset-profile properties for
+**datasets containing sensitive personal information**, covering anonymization
+methods, access controls, availability mode, and research use restrictions.
 
 ## Profile conformance
 
@@ -26,8 +25,8 @@ availability mode, and research use restrictions.
 | SPDX 3.0 | [spdx3.0/example05.spdx3.json](./spdx3.0/example05.spdx3.json) |
 | SPDX 3.1 (draft) | [spdx3.1/example05.spdx3.json](./spdx3.1/example05.spdx3.json) |
 
-
 [![A diagram of Dataset profile example 05 — Sensitive personal data.](./example05.spdx3.png "A diagram of Dataset profile example 05 — Sensitive personal data.")](./example05.spdx3.png)
+
 ## Key properties demonstrated
 
 | Property | Notes |

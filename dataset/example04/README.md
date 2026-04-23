@@ -11,10 +11,9 @@ This example illustrates an SBOM for a dataset of sensor readings collected
 from industrial equipment, used to train models that predict when maintenance
 is needed.
 
-The SBOM ([spdx3.0/example04.spdx3.json](./spdx3.0/example04.spdx3.json))
-demonstrates Dataset-profile properties for **sensor and time series datasets**,
-including collection process, multiple dataset types, update mechanism, known
-bias, and access controls.
+The SBOM demonstrates Dataset-profile properties for
+**sensor and time series datasets**, including collection process,
+multiple dataset types, update mechanism, known bias, and access controls.
 
 ## Profile conformance
 
@@ -25,10 +24,10 @@ bias, and access controls.
 | Version | File |
 | --------- | ------ |
 | SPDX 3.0 | [spdx3.0/example04.spdx3.json](./spdx3.0/example04.spdx3.json) |
-| SPDX 3.1 (draft) | [spdx3.1/example04.spdx3.json](./spdx3.1/example04.spdx3.json) |
-
+| SPDX 3.1 (draft) | [spdx3.1/example04.spdx3.json-draft](./spdx3.1/example04.spdx3.json-draft) |
 
 [![A diagram of Dataset profile example 04 — Sensor and time series data.](./example04.spdx3.png "A diagram of Dataset profile example 04 — Sensor and time series data.")](./example04.spdx3.png)
+
 ## Key properties demonstrated
 
 | Property | Notes |

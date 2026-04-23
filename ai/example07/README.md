@@ -8,7 +8,7 @@ SPDX-License-Identifier: CC-BY-4.0
 ## Description
 
 This example illustrates an SBOM for a consumer finance application
-(`FinApp Credit Advisor`) that embeds two AI components sourced from third
+("FinApp Credit Advisor") that embeds two AI components sourced from third
 parties:
 
 1. **CreditSense API** — a proprietary credit scoring model accessed via API
@@ -17,11 +17,10 @@ parties:
 2. **DocExtract ML** — an open-source document understanding model downloaded
    from a public model repository and deployed in-process.
 
-The SBOM ([spdx3.0/example07.spdx3.json](./spdx3.0/example07.spdx3.json))
-demonstrates **AI supply chain transparency** — the ability of a product owner
-to document AI components they depend on but do not control, including autonomy
-levels, regulatory compliance claims, sensitive data handling, and vendor
-attribution.
+The SBOM demonstrates **AI supply chain transparency** — the ability of a
+product owner to document AI components they depend on but do not control,
+including autonomy levels, regulatory compliance claims, sensitive data
+handling, and vendor attribution.
 
 ## Profile conformance
 
@@ -32,10 +31,10 @@ attribution.
 | Version | File |
 | --------- | ------ |
 | SPDX 3.0 | [spdx3.0/example07.spdx3.json](./spdx3.0/example07.spdx3.json) |
-| SPDX 3.1 (draft) | [spdx3.1/example07.spdx3.json](./spdx3.1/example07.spdx3.json) |
-
+| SPDX 3.1 (draft) | [spdx3.1/example07.spdx3.json-draft](./spdx3.1/example07.spdx3.json-draft) |
 
 [![A diagram of AI profile example 07 — Third-party AI supply chain.](./example07.spdx3.png "A diagram of AI profile example 07 — Third-party AI supply chain.")](./example07.spdx3.png)
+
 ## Key properties demonstrated
 
 | Property | Notes |

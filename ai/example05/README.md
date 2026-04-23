@@ -10,10 +10,10 @@ SPDX-License-Identifier: CC-BY-4.0
 This example illustrates an SBOM for an object detection model deployed on
 edge devices to monitor safety in a physical workspace.
 
-The SBOM ([spdx3.0/example05.spdx3.json](./spdx3.0/example05.spdx3.json))
-demonstrates AI-profile properties relevant to **model evaluation and deployment
-decisions**, covering performance metrics, detection thresholds, autonomy level,
-and training dataset sensitivity documentation.
+The SBOM demonstrates AI-profile properties relevant to
+**model evaluation and deployment decisions**, covering performance metrics,
+detection thresholds, autonomy level, and training dataset sensitivity
+documentation.
 
 ## Profile conformance
 
@@ -24,10 +24,10 @@ and training dataset sensitivity documentation.
 | Version | File |
 | --------- | ------ |
 | SPDX 3.0 | [spdx3.0/example05.spdx3.json](./spdx3.0/example05.spdx3.json) |
-| SPDX 3.1 (draft) | [spdx3.1/example05.spdx3.json](./spdx3.1/example05.spdx3.json) |
-
+| SPDX 3.1 (draft) | [spdx3.1/example05.spdx3.json-draft](./spdx3.1/example05.spdx3.json-draft) |
 
 [![A diagram of AI profile example 05 — Object detection model with performance metrics.](./example05.spdx3.png "A diagram of AI profile example 05 — Object detection model with performance metrics.")](./example05.spdx3.png)
+
 ## Key properties demonstrated
 
 | Property | Notes |

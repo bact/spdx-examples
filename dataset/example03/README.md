@@ -10,9 +10,8 @@ SPDX-License-Identifier: CC-BY-4.0
 This example illustrates an SBOM for a large text dataset of news articles in
 multiple languages, intended for training and evaluating language models.
 
-The SBOM ([spdx3.0/example03.spdx3.json](./spdx3.0/example03.spdx3.json))
-demonstrates Dataset-profile properties for **text corpora**, covering data
-collection, preprocessing, update mechanism, known bias, and size documentation.
+The SBOM demonstrates Dataset-profile properties for **text corpora**,
+covering data collection, preprocessing, update mechanism, known bias, and size documentation.
 In SPDX 3.0, language information can only be recorded in free-text `description`
 or `comment` fields; SPDX 3.1 introduces the Core `inLanguage` property
 (BCP 47 language tags) to address this gap directly.
@@ -26,10 +25,10 @@ or `comment` fields; SPDX 3.1 introduces the Core `inLanguage` property
 | Version | File |
 | --------- | ------ |
 | SPDX 3.0 | [spdx3.0/example03.spdx3.json](./spdx3.0/example03.spdx3.json) |
-| SPDX 3.1 (draft) | [spdx3.1/example03.spdx3.json](./spdx3.1/example03.spdx3.json) |
-
+| SPDX 3.1 (draft) | [spdx3.1/example03.spdx3.json-draft](./spdx3.1/example03.spdx3.json-draft) |
 
 [![A diagram of Dataset profile example 03 — Multilingual text corpus.](./example03.spdx3.png "A diagram of Dataset profile example 03 — Multilingual text corpus.")](./example03.spdx3.png)
+
 ## Key properties demonstrated
 
 | Property | Notes |

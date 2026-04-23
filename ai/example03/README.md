@@ -10,10 +10,9 @@ SPDX-License-Identifier: CC-BY-4.0
 This example illustrates an SBOM for a medical AI model that analyzes eye
 images to assess disease severity.
 
-The SBOM ([spdx3.0/example03.spdx3.json](./spdx3.0/example03.spdx3.json))
-demonstrates AI-profile properties relevant to **high-risk regulated AI systems**,
-covering safety classification, regulatory compliance, explainability, and
-sensitive data handling.
+The SBOM demonstrates AI-profile properties relevant to
+**high-risk regulated AI systems**, covering safety classification,
+regulatory compliance, explainability, and sensitive data handling.
 
 ## Profile conformance
 
@@ -25,8 +24,8 @@ sensitive data handling.
 | ------- | ---- |
 | SPDX 3.0 | [spdx3.0/example03.spdx3.json](./spdx3.0/example03.spdx3.json) |
 
-
 [![A diagram of AI profile example 03 — Medical AI with safety classification.](./example03.spdx3.png "A diagram of AI profile example 03 — Medical AI with safety classification.")](./example03.spdx3.png)
+
 ## Key properties demonstrated
 
 | Property | Notes |

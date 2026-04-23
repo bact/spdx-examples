@@ -3,7 +3,7 @@ SPDX-FileType: DOCUMENTATION
 SPDX-License-Identifier: CC-BY-4.0
 ---
 
-# SPDX AI profile usage examples
+# SPDX AI profile examples
 
 This repository includes demonstrations of [SPDX documents](https://spdx.dev)
 for various examples of AI applications and models.
