@@ -40,3 +40,4 @@ multiple dataset types, update mechanism, known bias, and access controls.
 | `/Dataset/hasSensitivePersonalInformation` | `no` |
 | `/Dataset/intendedUse` | Research use cases - deprecated in SPDX 3.1, use `/Core/intendedUse` |
 | `/Dataset/knownBias` | Gaps in equipment and failure type coverage documented |
+| `/Dataset/sensor` | 8 sensor types as key-value pairs: sensor name → calibration and range description |
