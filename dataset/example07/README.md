@@ -3,15 +3,14 @@ SPDX-FileType: DOCUMENTATION
 SPDX-License-Identifier: CC-BY-4.0
 ---
 
-# Dataset example 7 - Pressure sensor calibration dataset
+# Dataset example 7 - Calibration dataset
 
 ## Description
 
 This example illustrates an SBOM for a calibration dataset: measurement
 records from testing 120 industrial pressure sensors against a certified
 reference standard. Calibration datasets are used by laboratories and
-manufacturers to verify that instruments measure correctly. This example has
-no connection to machine learning or AI.
+manufacturers to verify that instruments measure correctly.
 
 The dataset (~50 MB, CSV + JSON) is published openly under CC-BY-4.0 with a
 DOI, which motivates using `externalIdentifier` to record the persistent
